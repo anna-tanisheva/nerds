@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Anna Tanisheva](https://up.htmlacademy.ru/htmlcss/15/user/214829).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/id29644).
 
 ---
 
