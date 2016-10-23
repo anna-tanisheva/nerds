@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Нёрдс</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+	<!-- HEADER -->
 
-  </body>
+	<header class="main-header">
+		<div class="container">
+			<a class="logo" href="#"><img src="http://placehold.it/150x100" alt="nёrds"></a>
+			<nav class="nav-bar">	
+				<ul>
+					<li><a href="#">студия</a></li>
+					<li><a href="#">клиенты</a></li>
+					<li><a href="#">магазин</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+				<a class="cart" href="#">корзина</a>
+			</nav>
+		</div>	
+	</header>
+
+	<!-- CONTENT -->
+
+	<div class="main">
+		<div class="slider">
+			<div class="slider-item-1">
+				<img class="slider-img-1 active" src="http://placehold.it/150x100" alt="slide1">
+				<div class="slider-caption">
+					<p><span>Долго, дорого, скурпулезно</span> Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+				</div>
+			</div>
+			<div class="slider-item2">
+				<img class="slider-img-2" src="http://placehold.it/150x100" alt="slide2">
+				<div class="slider-caption">
+					<p><span>Любим математику как никто другой</span> Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+				</div>
+			</div>
+			<div class="slider-item3">
+				<img class="slider-img-3" src="http://placehold.it/150x100" alt="slide3.jpeg">
+				<div class="slider-caption">
+					<p><span>Только ночь, только хардкор</span> Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+				</div>
+			</div>
+			<a class="slider-button btn" href="#">узнать больше</a>
+			<ol class="slider-control"> <!-- Вот тут пока немного непонятно как элемент управления слайдером сделать. Решила пока так разметить-->
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+		<section class="features">
+			<div class="features-sites"> <!-- КАРТИНКИ В ДАННОМ БЛОКЕ БУДУТ ЗАДАНЫ В CSS -->
+				<div class="features-text">
+					<p><span>Веб-сайты </span>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<a class="btn" href="#">Заказать</a>
+				</div>
+			</div>
+			
+			<div class="features-applications">
+				<div class="features-text">
+					<p><span>Приложения </span>Покорите топ-10 приложений в AppStore и Google Play</p>
+					<a class="btn" href="#">Заказать</a>
+				</div>
+			</div>
+
+			<div class="features-presentations">
+				<div class="features-text">
+					<p><span>Презентации </span>Вы даже не подозреваете насколько вы изумительны</p>
+					<a class="btn" href="#">Заказать</a>
+				</div>
+			</div>
+			<hr>
+		</section>
+
+
+		<section class="about">
+			<div class="about-left">
+				<h1>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
+				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет преввыше креатива. Работаем непокладая рук, как роботы.</p>
+				<h2>выполняем заказы на разработку:</h2>
+				<ul>
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для iOS и Andriod</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</div>
+			<div class="about-right">
+				<img src="http://placehold.it/150x100" alt="nёrds">
+				<h2>с 2004 года любим точность во всем:</h2>
+				<ul>
+					<li><span>146%</span> Уровень самоотдачи</li>
+					<li><span>100%</span> Соблюдение сроков</li>
+					<li><span>50%</span> Минимальная предоплата</li>
+				</ul>
+			</div>
+		</section>
+
+		
+		<section class="recent-works">
+				<a class="html-academy" href="#"><img src="http://placehold.it/150x100" alt="html-academy"></a>
+				<a class="borodinski" href="#"><img src="http://placehold.it/150x100" alt="borodinski"></a>
+				<a class="pink" href="#"><img src="http://placehold.it/150x100" alt="pink"></a>
+				<a class="mishka" href="#"><img src="http://placehold.it/150x100" alt="mishka"></a>
+		</section>
+	</div>
+
+	<!-- FOOTER -->
+
+	<footer class="main-footer">
+		<section class="container-map">
+			<div id="map" class="map"></div>
+    
+			<div class="contacts">
+				<p><span>nёrds design studio</span><br>
+				191186, Санкт-Петербург,<br>
+				ул. Б. Конюшенная, д.19/8 тел.<br> 
+				+7(812)275-75-75</p>
+				<a  class="btn" href="">Напишите нам</a>
+			</div>
+		</section>
+		<div class="container">
+			<section class="social">
+				<a href="#">Вконтакте</a>
+				<a href="#">Facebook</a>
+				<a href="#">Instagram</a>
+			</section>
+			<section class="footer-text">
+				<p><span>Давайте дружить, это выгодно!</span>
+				Скидка 10% для друзей из социальных сетей.</p>
+			</section>
+		</div>
+	</footer>
+
+	
+
+	<!-- СКРИПТ КАРТЫ. ПРОБЛЕМА - ПРИ ВКЛЮЧЕННОМ ЗУМЕ ПЕРЕДВИГАЕТСЯ МАРКЕР -->
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="icon_customImage.js" type="text/javascript"></script>
+	<script>
+		ymaps.ready(function () {
+    		var myMap = new ymaps.Map('map', {
+	            center: [59.93911965979718,30.322651878195746],
+	            zoom: 17,
+	            controls: []
+	            
+	        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-marker.png',
+            iconImageSize: [130, 77],
+            iconImageOffset: [0, 0],
+        });
+
+		    myMap.geoObjects.add(myPlacemark);
+		    myMap.behaviors.disable('scrollZoom');
+		});	
+	</script>
+</body>
 </html>

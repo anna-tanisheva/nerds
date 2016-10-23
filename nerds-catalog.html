@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nёrds Catalog</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- HEADER -->
+
+	<header class="main-header">
+		<div class="container">
+			<a class="logo" href="#"><img src="http://placehold.it/150x100" alt="nёrds"></a>
+			<nav class="nav-bar">	
+				<ul>
+					<li><a href="#">студия</a></li>
+					<li><a href="#">клиенты</a></li>
+					<li><a href="#">магазин</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+				<a class="cart" href="#">корзина</a>
+			</nav>
+		</div>	
+	</header>
+
+	<!-- CONTENT -->
+
+	<main class="container">
+		<div class="name">
+			<h1>магазин готовых шаблонов</h1>
+		</div>
+
+		<div class="wrapper">
+
+
+		<!-- LEFT SECTION -->
+			<section class="wrapper-left">
+				<form action="#" method="get" oninput="priceoutput.value=price.value">
+					<div class="price"> <!-- ТУТ НЕ ЗНАЮ КАК РЕАЛИЗОВАТЬ ДВОЙНОЙ ПОЛЗУНОК -->
+						<b>стоимость</b>
+						<input id="price" name="price" type="range" min="0" max="25000" step="100"><br>
+						<output name="priceoutput">до</output>
+					</div>
+					<div class="grid">
+						<b>сетка</b>
+						<label>
+							<input type="radio" value="adaptive" name="grid" checked>
+							Адаптивная
+						</label>
+						<label>
+							<input type="radio" value="fixed" name="grid">
+							Фиксированная
+						</label>
+						<label>
+							<input type="radio" value="fluid" name="grids">
+							Резиновая
+						</label>
+					</div>
+					<div class="features">
+						<b>особенности</b>
+						<label><input type="checkbox" name="slider" checked>Слайдер</label>
+						<label><input type="checkbox" name="advantage-block">Блок преимуществ</label>
+						<label><input type="checkbox" name="news" checked>Новости</label>
+						<label><input type="checkbox" name="gallery">Галерея</label>
+						<label><input type="checkbox" name="cart">Корзина</label>
+					</div>
+					<button class="btn" type="submit">Показать</button>
+				</form>
+			</section>
+
+
+		<!-- RIGHT SECTION -->
+			<section class="wrapper-right">
+				<div class="sorted">
+					<!-- СОРТИРОВКА РЕАЛИЗУЕТСЯ НА JS? -->
+					<b>сортировать</b>
+					<p>по цене по типу по названию</p>
+				</div>
+				<div class="gallery">
+					<article class="sedona">
+						<img src="http://placehold.it/150x100" alt="sedona" width="" height="">
+						<div class="hover">
+							<h2>sedona</h2>
+							<p>Информационный сайт <br>для туристов</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+					<article class="pink">
+						<img src="http://placehold.it/150x100" alt="pink" width="" height="">
+						<div class="hover">
+							<h2>pink app</h2>
+							<p>Продуктовый лендинг <br>приложения для iOS и Android</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+					<article class="barbershop">
+						<img src="http://placehold.it/150x100" alt="barbershop" width="" height="">
+						<div class="hover">
+							<h2>barbershop</h2>
+							<p>Сайт салона красоты. <br>Для мужчин, да.</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+					<article class="mishka">
+						<img src="http://placehold.it/150x100" alt="mishka" width="" height="">
+						<div class="hover">
+							<h2>mishka</h2>
+							<p>Интернет-магазин <br>вязанных игрушек</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+					<article class="a-plus">
+						<img src="http://placehold.it/150x100" alt="a-plus" width="" height="">
+						<div class="hover">
+							<h2>a plus</h2>
+							<p>Лендинг курсов повышения <br>квалификации</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+					<article class="kvast">
+						<img src="http://placehold.it/150x100" alt="kvast" width="" height="">
+						<div class="hover">
+							<h2>кваст</h2>
+							<p>Промо-сайт производителя <br>крафтового кваса</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+				</div>
+
+				<!-- PAGINATOR -->
+				<!-- Не уверена, как лучше сверстать пагинатор. Сделала пока так -->
+				<div class="paginator">
+					<a href="#">Предыдущая</a> <!-- НЕТ В МАКЕТЕ, НО ПАГИНАТОР НА 1 СТРАНИЦЕ, СЛЕДУЯ ЛОГИКЕ, НА ПОСЛЕДУЮЩИХ СТРАНИЦАХ ДОЛЖНА ПОЯВЛЯТЬСЯ -->
+					<ul>
+						<li>1</li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+					</ul>
+					<a href="#">Следующая</a>
+				</div>
+			</section>
+		</div>
+	</main>
+
+		<!-- FOOTER -->
+
+	<footer class="main-footer">
+		<section class="container-map">
+			<div id="map" class="map"></div>
+    
+			<div class="contacts">
+				<p><span>nёrds design studio</span><br>
+				191186, Санкт-Петербург,<br>
+				ул. Б. Конюшенная, д.19/8 тел.<br> 
+				+7(812)275-75-75</p>
+				<a  class="btn" href="">Напишите нам</a>
+			</div>
+		</section>
+		<div class="container">
+			<section class="social">
+				<a href="#">Вконтакте</a>
+				<a href="#">Facebook</a>
+				<a href="#">Instagram</a>
+			</section>
+			<section class="footer-text">
+				<p><span>Давайте дружить, это выгодно!</span>
+				Скидка 10% для друзей из социальных сетей.</p>
+			</section>
+		</div>
+	</footer>
+
+ 		<!-- СКРИПТ КАРТЫ. ПРОБЛЕМА - ПРИ ВКЛЮЧЕННОМ ЗУМЕ ПЕРЕДВИГАЕТСЯ МАРКЕР -->
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="icon_customImage.js" type="text/javascript"></script>
+	<script>
+		ymaps.ready(function () {
+    		var myMap = new ymaps.Map('map', {
+	            center: [59.93911965979718,30.322651878195746],
+	            zoom: 17,
+	            controls: []
+	            
+	        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-marker.png',
+            iconImageSize: [130, 77],
+            iconImageOffset: [0, 0],
+        });
+
+		    myMap.geoObjects.add(myPlacemark);
+		    myMap.behaviors.disable('scrollZoom');
+		});	
+	</script>
+	
+</body>
+</html>
