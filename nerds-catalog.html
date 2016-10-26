@@ -7,13 +7,15 @@
 </head>
 <body>
 
-	<!-- HEADER -->
+	<!--HEADER-->
 
 	<header class="main-header">
-		<div class="header-container">
+		<div class="logo-container">
 			<a class="logo" href="#">
 				<img src="http://placehold.it/150x100" alt="nёrds" height="65" width="160">
 			</a>
+		</div>
+		<div class="nav-bar-container">
 			<nav class="nav-bar">	
 				<ul>
 					<li>
@@ -37,209 +39,215 @@
 	<!-- CONTENT -->
 
 	<main>
-		<div class="main-container">
-			<div class="catalog-item">
-				<h1>Магазин готовых шаблонов</h1>
+		<div class="catalog-item">
+			<h1>Магазин готовых шаблонов</h1>
+		</div>
+
+
+		<!-- LEFT SECTION -->
+		<div class="wrapper-left">
+			<div class="wrapper-left-container">
+				<form action="#" method="get" oninput="priceoutput.value=price.value">
+					<!-- ползунок -->
+					<!-- <div class="price">
+						<b class="form-captions">стоимость</b>
+						<input id="price" name="price" type="range" min="0" max="25000" step="100"><br>
+						<output name="priceoutput">до</output>
+					</div> -->
+					<fieldset class="grid">
+						<legend class="form-caption">Сетка</legend>
+						<label>
+							<input type="radio" value="adaptive" name="grid" checked>
+							Адаптивная
+						</label>
+						<label>
+							<input type="radio" value="fixed" name="grid">
+							Фиксированная
+						</label>
+						<label>
+							<input type="radio" value="fluid" name="grid">
+							Резиновая
+						</label>
+					</fieldset>
+					<fieldset class="features">
+						<legend class="form-caption">Особенности</legend>
+						<label>
+							<input type="checkbox" name="slider" checked>
+							Слайдер
+						</label>
+						<label>
+							<input type="checkbox" name="advantage-block">
+							Блок преимуществ
+						</label>
+						<label>
+							<input type="checkbox" name="news" checked>
+							Новости
+						</label>
+						<label>
+							<input type="checkbox" name="gallery">
+							Галерея
+						</label>
+						<label>
+							<input type="checkbox" name="cart">
+							Корзина
+						</label>
+					</fieldset>
+					<!-- Здесь все-таки не понятно по поводу кнопки: сделать ее одновременно и ссылкой и кнопкой нельзя (валидатор ругается), но в ТЗ написано, что кнопка «Показать» отвечает за отправку формы, но она же должна тогда быть кнопкой с типом submit, чтобы это делать... или я не правильно понимаю спецификацию? -->
+					<a class="btn" href="form.html">Показать</a>
+				</form>
 			</div>
-
-			<div class="content-wrapper">
-
-
-				<!-- LEFT SECTION -->
-				<div class="wrapper-left">
-					<form action="#" method="get" oninput="priceoutput.value=price.value">
-						<!-- ползунок -->
-						<!-- <div class="price">
-							<b class="form-captions">стоимость</b>
-							<input id="price" name="price" type="range" min="0" max="25000" step="100"><br>
-							<output name="priceoutput">до</output>
-						</div> -->
-						<fieldset class="grid">
-							<legend class="form-caption">Сетка</legend>
-							<label>
-								<input type="radio" value="adaptive" name="grid" checked>
-								Адаптивная
-							</label>
-							<label>
-								<input type="radio" value="fixed" name="grid">
-								Фиксированная
-							</label>
-							<label>
-								<input type="radio" value="fluid" name="grid">
-								Резиновая
-							</label>
-						</fieldset>
-						<fieldset class="features">
-							<legend class="form-caption">Особенности</legend>
-							<label>
-								<input type="checkbox" name="slider" checked>
-								Слайдер
-							</label>
-							<label>
-								<input type="checkbox" name="advantage-block">
-								Блок преимуществ
-							</label>
-							<label>
-								<input type="checkbox" name="news" checked>
-								Новости
-							</label>
-							<label>
-								<input type="checkbox" name="gallery">
-								Галерея
-							</label>
-							<label>
-								<input type="checkbox" name="cart">
-								Корзина
-							</label>
-						</fieldset>
-						<!-- Здесь все-таки не понятно по поводу кнопки: сделать ее одновременно и ссылкой и кнопкой нельзя (валидатор ругается), но в ТЗ написано, что кнопка «Показать» отвечает за отправку формы, но она же должна тогда быть кнопкой с типом submit, чтобы это делать... или я не правильно понимаю спецификацию? -->
-						<a class="btn" href="form.html">Показать</a>
-						
-					</form>
-					<!-- end left section -->
-
-				</div>
-				
+		</div>
+		<!-- end left section -->
+		
 
 
-				<!-- RIGHT SECTION -->
-				<div class="wrapper-right">
-					<div class="sorting">
-						<b class="form-captions">Cортировать</b>
-						<ul>
-							<li>По цене</li>
-							<li>По типу</li>
-							<li>По названию</li>
-						</ul>
-					</div>
-					<!-- end sorting -->
-
-
-					<div class="gallery">
-						<article class="gallery-item">
-							<img src="http://placehold.it/150x100" alt="sedona"  height="575" width="359">
-							<div class="hover">
-								<h2><a href="#">Sedona</a></h2>
-								<p>Информационный сайт для туристов</p>
-								<a class="btn" href="#">9 900 руб.</a>
-							</div>
-						</article>
-						<article class="gallery-item">
-							<img src="http://placehold.it/150x100" alt="pink" height="575" width="359">
-							<div class="hover">
-								<h2><a href="#">Pink app</a></h2>
-								<p>Продуктовый лендинг приложения для iOS и Android</p>
-								<a class="btn" href="#">9 900 руб.</a>
-							</div>
-						</article>
-						<article class="gallery-item">
-							<img src="http://placehold.it/150x100" alt="barbershop" height="575" width="359">
-							<div class="hover">
-								<h2><a href="#">Barbershop</a></h2>
-								<p>Сайт салона красоты. Для мужчин, да.</p>
-								<a class="btn" href="#">9 900 руб.</a>
-							</div>
-						</article>
-						<article class="gallery-item">
-							<img src="http://placehold.it/150x100" alt="mishka" height="575" width="359">
-							<div class="hover">
-								<h2><a href="#">Mishka</a></h2>
-								<p>Интернет-магазин вязанных игрушек</p>
-								<a class="btn" href="#">9 900 руб.</a>
-							</div>
-						</article>
-						<article class="gallery-item">
-							<img src="http://placehold.it/150x100" alt="a-plus" height="575" width="359">
-							<div class="hover">
-								<h2><a href="#">A plus</a></h2>
-								<p>Лендинг курсов повышения квалификации</p>
-								<a class="btn" href="#">9 900 руб.</a>
-							</div>
-						</article>
-						<article class="gallery-item">
-							<img src="http://placehold.it/150x100" alt="kvast" height="575" width="359">
-							<div class="hover">
-								<h2><a href="#">Кваст</a></h2>
-								<p>Промо-сайт производителя крафтового кваса</p>
-								<a class="btn" href="#">9 900 руб.</a>
-							</div>
-						</article>
-					</div>
-					<!-- end right section -->
-
-					<!-- PAGINATOR -->
-					<div class="paginator">
-						<ul>
-							<li><span>1</span></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">Следующая</a></li>
-						</ul>						
-					</div>
-					<!-- end paginator -->
-
+		<!-- RIGHT SECTION -->
+		<div class="wrapper-right">
+			<div class="sorting">
+				<div class="sorting-container">
+					<b class="form-captions">Cортировать</b>
+					<ul>
+						<li>По цене</li>
+						<li>По типу</li>
+						<li>По названию</li>
+					</ul>
 				</div>
 			</div>
+			<!-- end sorting -->
+
+
+			<div class="gallery">
+				<div class="gallery-container">
+					<article class="gallery-item">
+						<img src="http://placehold.it/150x100" alt="sedona"  height="575" width="359">
+						<div class="hover">
+							<h3><a href="#">Sedona</a></h3>
+							<p>Информационный сайт для туристов</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+					<article class="gallery-item">
+						<img src="http://placehold.it/150x100" alt="pink" height="575" width="359">
+						<div class="hover">
+							<h3><a href="#">Pink app</a></h3>
+							<p>Продуктовый лендинг приложения для iOS и Android</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+					<article class="gallery-item">
+						<img src="http://placehold.it/150x100" alt="barbershop" height="575" width="359">
+						<div class="hover">
+							<h3><a href="#">Barbershop</a></h3>
+							<p>Сайт салона красоты. Для мужчин, да.</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+					<article class="gallery-item">
+						<img src="http://placehold.it/150x100" alt="mishka" height="575" width="359">
+						<div class="hover">
+							<h3><a href="#">Mishka</a></h3>
+							<p>Интернет-магазин вязанных игрушек</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+					<article class="gallery-item">
+						<img src="http://placehold.it/150x100" alt="a-plus" height="575" width="359">
+						<div class="hover">
+							<h3><a href="#">A plus</a></h3>
+							<p>Лендинг курсов повышения квалификации</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+					<article class="gallery-item">
+						<img src="http://placehold.it/150x100" alt="kvast" height="575" width="359">
+						<div class="hover">
+							<h3><a href="#">Кваст</a></h3>
+							<p>Промо-сайт производителя крафтового кваса</p>
+							<a class="btn" href="#">9 900 руб.</a>
+						</div>
+					</article>
+				</div>
+			</div>
+			<!-- end right section -->
+
+			<!-- PAGINATOR -->
+			<div class="paginator">
+				<div class="paginator-container">
+					<ul>
+						<li><span>1</span></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">Следующая</a></li>
+					</ul>						
+				</div>
+			</div>
+			<!-- end paginator -->
+
 		</div>
 	</main>
 
 		<!-- FOOTER -->
 
 	<footer class="main-footer">
-		<div class="footer-container">
+		<div class="map-container">
 			<div id="map" class="map"></div>
     
 			<div class="contacts">
-				<p><span>nёrds design studio</span><br>
-				191186, Санкт-Петербург,<br>
-				ул. Б. Конюшенная, д.19/8 тел.<br> 
-				+7(812)275-75-75</p>
-				<a  class="btn" href="">Напишите нам</a>
+				<div class="contacts-container">
+					<h3>nёrds design studio</h3>
+					<p>191186, Санкт-Петербург,<br>
+					ул. Б. Конюшенная, д.19/8 тел.<br> 
+					+7(812)275-75-75</p>
+					<a  class="btn" href="">Напишите нам</a>
+				</div>
+				<!-- end contacts -->
 
 
 				<!-- MODAL WINDOW -->
 				<div class="modal-window">
-					<form action="#" method="post">
-						<fieldset>
-							<legend>Напишите нам</legend>
-							<label>
-								Ваше имя:
-								<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-							</label>
-							<label>
-								Ваш e-mail:
-								<input type="email" name="e-mail" placeholder="Для отправки ответа">
-							</label>
-							<label>
-								Текст письма:
-								<textarea rows="4" name="message" placeholder="В свободной форме"></textarea>
-							</label>
-							<button class="btn">Отправить</button>
-						</fieldset>
-					</form>
+					<div class="modal-window-container">
+						<form action="#" method="post">
+							<fieldset>
+								<legend>Напишите нам</legend>
+								<label>
+									Ваше имя:
+									<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+								</label>
+								<label>
+									Ваш e-mail:
+									<input type="email" name="e-mail" placeholder="Для отправки ответа">
+								</label>
+								<label>
+									Текст письма:
+									<textarea rows="4" name="message" placeholder="В свободной форме"></textarea>
+								</label>
+								<button class="btn">Отправить</button>
+							</fieldset>
+						</form>
+					</div>
 				</div>
-				<!-- end modal window -->
-
-
 			</div>
+				<!-- end modal window -->
 		</div>
 		<!-- end map -->
 
 
 		<div class="social">
-			<div class="social-icons">
-				<a href="#">Вконтакте</a>
-				<a href="#">Facebook</a>
-				<a href="#">Instagram</a>
-			</div>
-			<div class="social-text">
-				<p><span>Давайте дружить, это выгодно!</span>
-				Скидка 10% для друзей из социальных сетей.</p>
+			<div class="social-container">
+				<div class="social-icons">
+					<a href="#">Вконтакте</a>
+					<a href="#">Facebook</a>
+					<a href="#">Instagram</a>
+				</div>
+				<div class="social-text">
+					<div class="social-text-container">
+						<p><span>Давайте дружить, это выгодно!</span>
+						Скидка 10% для друзей из социальных сетей.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- end social -->
-
-
 	</footer>	
 </body>
 </html>
