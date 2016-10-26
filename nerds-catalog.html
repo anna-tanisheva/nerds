@@ -7,31 +7,29 @@
 </head>
 <body>
 
-	<!--HEADER-->
+	<!-- HEADER -->
 
 	<header class="main-header">
-		<div class="logo-container">
+		<div class="header-container">
 			<a class="logo" href="#">
 				<img src="http://placehold.it/150x100" alt="nёrds" height="65" width="160">
 			</a>
-		</div>
-		<div class="nav-bar-container">
 			<nav class="nav-bar">	
 				<ul>
 					<li>
-						<a href="#">Студия</a>
+						<a class="nav-item" href="#">Студия</a>
 					</li>
 					<li>
-						<a href="#">Клиенты</a>
+						<a class="nav-item" href="#">Клиенты</a>
 					</li>
 					<li>
-						<a href="#">Магазин</a>
+						<a class="nav-item" href="#">Магазин</a>
 					</li>
 					<li>
-						<a href="#">Контакты</a>
+						<a class="nav-item" href="#">Контакты</a>
 					</li>
 				</ul>
-				<a class="cart" href="#">Корзина</a>
+				<a class="nav-item cart" href="#">Корзина</a>
 			</nav>
 		</div>	
 	</header>
@@ -45,12 +43,12 @@
 
 
 		<!-- LEFT SECTION -->
-		<div class="wrapper-left">
-			<div class="wrapper-left-container">
+		<div class="left-section">
+			<div class="left-container">
 				<form action="#" method="get" oninput="priceoutput.value=price.value">
 					<!-- ползунок -->
 					<!-- <div class="price">
-						<b class="form-captions">стоимость</b>
+						<b class="form-caption">стоимость</b>
 						<input id="price" name="price" type="range" min="0" max="25000" step="100"><br>
 						<output name="priceoutput">до</output>
 					</div> -->
@@ -92,32 +90,27 @@
 							Корзина
 						</label>
 					</fieldset>
-					<!-- Здесь все-таки не понятно по поводу кнопки: сделать ее одновременно и ссылкой и кнопкой нельзя (валидатор ругается), но в ТЗ написано, что кнопка «Показать» отвечает за отправку формы, но она же должна тогда быть кнопкой с типом submit, чтобы это делать... или я не правильно понимаю спецификацию? -->
-					<a class="btn" href="form.html">Показать</a>
+					<a class="button" href="form.html">Показать</a>
 				</form>
 			</div>
 		</div>
 		<!-- end left section -->
-		
-
 
 		<!-- RIGHT SECTION -->
-		<div class="wrapper-right">
-			<div class="sorting">
-				<div class="sorting-container">
-					<b class="form-captions">Cортировать</b>
+		<div class="right-section">
+			<div class="right-container">
+				<div class="sorting">
+					<b class="form-caption">Cортировать</b>
 					<ul>
 						<li>По цене</li>
 						<li>По типу</li>
 						<li>По названию</li>
 					</ul>
 				</div>
-			</div>
-			<!-- end sorting -->
+				<!-- end sorting -->
 
 
-			<div class="gallery">
-				<div class="gallery-container">
+				<div class="gallery">
 					<article class="gallery-item">
 						<img src="http://placehold.it/150x100" alt="sedona"  height="575" width="359">
 						<div class="hover">
@@ -169,85 +162,84 @@
 				</div>
 			</div>
 			<!-- end right section -->
-
-			<!-- PAGINATOR -->
-			<div class="paginator">
-				<div class="paginator-container">
-					<ul>
-						<li><span>1</span></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">Следующая</a></li>
-					</ul>						
-				</div>
-			</div>
-			<!-- end paginator -->
-
 		</div>
+
+		<!-- PAGINATOR -->
+		<div class="paginator">
+			<div class="paginator-container">
+				<ul>
+					<li><span>1</span></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a class="button" href="#">Следующая</a></li>
+				</ul>						
+			</div>
+		</div>
+		<!-- end paginator -->
 	</main>
 
-		<!-- FOOTER -->
+	<!-- FOOTER -->
 
 	<footer class="main-footer">
-		<div class="map-container">
+		<div class="footer-container">
+		
+			<!-- MAP -->
 			<div id="map" class="map"></div>
-    
+
+
+    		<!-- CONTACTS -->
 			<div class="contacts">
-				<div class="contacts-container">
-					<h3>nёrds design studio</h3>
-					<p>191186, Санкт-Петербург,<br>
-					ул. Б. Конюшенная, д.19/8 тел.<br> 
-					+7(812)275-75-75</p>
-					<a  class="btn" href="">Напишите нам</a>
+				<h3>nёrds design studio</h3>
+				<p>191186, Санкт-Петербург,<br>
+				ул. Б. Конюшенная, д.19/8 тел.<br> 
+				+7(812)275-75-75</p>
+				<a  class="btn" href="">Напишите нам</a>
+			</div>
+			<!-- end contacts -->
+
+
+			<!-- MODAL WINDOW -->
+			<div class="modal-window">
+				<div class="modal-window-container">
+					<form action="#" method="post">
+						<fieldset>
+							<legend>Напишите нам</legend>
+							<label>
+								Ваше имя:
+								<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+							</label>
+							<label>
+								Ваш e-mail:
+								<input type="email" name="e-mail" placeholder="Для отправки ответа">
+							</label>
+							<label>
+								Текст письма:
+								<textarea rows="4" name="message" placeholder="В свободной форме"></textarea>
+							</label>
+							<button class="btn">Отправить</button>
+						</fieldset>
+					</form>
 				</div>
-				<!-- end contacts -->
-
-
-				<!-- MODAL WINDOW -->
-				<div class="modal-window">
-					<div class="modal-window-container">
-						<form action="#" method="post">
-							<fieldset>
-								<legend>Напишите нам</legend>
-								<label>
-									Ваше имя:
-									<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-								</label>
-								<label>
-									Ваш e-mail:
-									<input type="email" name="e-mail" placeholder="Для отправки ответа">
-								</label>
-								<label>
-									Текст письма:
-									<textarea rows="4" name="message" placeholder="В свободной форме"></textarea>
-								</label>
-								<button class="btn">Отправить</button>
-							</fieldset>
-						</form>
+			</div>
+			<!-- end modal window -->
+		
+			<!-- SOCIAL -->
+			<div class="social">
+				<div class="social-container">
+					<div class="social-icons">
+						<a href="#">Вконтакте</a>
+						<a href="#">Facebook</a>
+						<a href="#">Instagram</a>
+					</div>
+					<div class="social-text">
+						<b>Давайте дружить, это выгодно!</b>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
 					</div>
 				</div>
 			</div>
-				<!-- end modal window -->
-		</div>
-		<!-- end map -->
+			<!-- end social -->
 
-
-		<div class="social">
-			<div class="social-container">
-				<div class="social-icons">
-					<a href="#">Вконтакте</a>
-					<a href="#">Facebook</a>
-					<a href="#">Instagram</a>
-				</div>
-				<div class="social-text">
-					<div class="social-text-container">
-						<p><span>Давайте дружить, это выгодно!</span>
-						Скидка 10% для друзей из социальных сетей.</p>
-					</div>
-				</div>
-			</div>
 		</div>
-		<!-- end social -->
-	</footer>	
+	</footer>
 </body>
 </html>

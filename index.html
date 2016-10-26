@@ -7,31 +7,29 @@
 </head>
 <body>
 
-	<!-- HEADER     -->
+	<!-- HEADER -->
 
 	<header class="main-header">
-		<div class="logo-container">
+		<div class="header-container">
 			<a class="logo" href="#">
 				<img src="http://placehold.it/150x100" alt="nёrds" height="65" width="160">
 			</a>
-		</div>
-		<div class="nav-bar-container">
 			<nav class="nav-bar">	
 				<ul>
 					<li>
-						<a href="#">Студия</a>
+						<a class="nav-item" href="#">Студия</a>
 					</li>
 					<li>
-						<a href="#">Клиенты</a>
+						<a class="nav-item" href="#">Клиенты</a>
 					</li>
 					<li>
-						<a href="#">Магазин</a>
+						<a class="nav-item" href="#">Магазин</a>
 					</li>
 					<li>
-						<a href="#">Контакты</a>
+						<a class="nav-item" href="#">Контакты</a>
 					</li>
 				</ul>
-				<a class="cart" href="#">Корзина</a>
+				<a class="nav-item cart" href="#">Корзина</a>
 			</nav>
 		</div>	
 	</header>
@@ -43,8 +41,8 @@
 		<!-- SLIDER -->
 		<div class="slider">
 			<div class="slider-container">
-				<div class="slider-item-phones">
-					<div class="slider-img-phones active">
+				<div class="slider-item active">
+					<div class="slider-img">
 						<img src="http://placehold.it/150x100" alt="slide1" height="430" width="760">
 					</div>
 					<div class="slider-caption">
@@ -53,8 +51,8 @@
 					</div>
 					<a class="btn" href="#">Узнать больше</a>
 				</div>
-				<div class="slider-item-screens">
-					<div class="slider-img-screens">
+				<div class="slider-item">
+					<div class="slider-img">
 						<img src="http://placehold.it/150x100" alt="slide2" height="430" width="760">
 					</div>
 					<div class="slider-caption">
@@ -63,8 +61,8 @@
 					</div>
 					<a class="btn" href="#">Узнать больше</a>
 				</div>
-				<div class="slider-item-tablet">
-					<div class="slider-img-tablet">
+				<div class="slider-item">
+					<div class="slider-img">
 						<img src="http://placehold.it/150x100" alt="slide3.jpeg" height="430" width="760">
 					</div>
 					<div class="slider-caption">
@@ -81,39 +79,38 @@
 		<!-- FEATURES -->
 		<div class="features">
 			<div class="features-container">
-				<div class="features-sites">
+				<div class="features-item">
 					<figure class="features-img">
 						<img src="http://placehold.it/150x100" alt="web-sites" height="146" width="300">
 					</figure>
 					<div class="features-text">
 						<h2>Веб-сайты</h2>
 						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-						<a class="btn" href="#">Заказать</a>
 					</div>
+					<a class="btn" href="#">Заказать</a>
 				</div>
 				
-				<div class="features-applications">
+				<div class="features-item">
 					<figure class="features-img">
 						<img src="http://placehold.it/150x100" alt="applications" height="146" width="300">
 					</figure>
 					<div class="features-text">
 						<h2>Приложения </h2>
 						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-						<a class="btn" href="#">Заказать</a>
 					</div>
+					<a class="btn" href="#">Заказать</a>
 				</div>
 
-				<div class="features-presentations">
+				<div class="features-item">
 					<figure class="features-img">
 						<img src="http://placehold.it/150x100" alt="presentations" height="146" width="300">
 					</figure>
 					<div class="features-text">
 						<h2>Презентации</h2>
 						<p>Вы даже не подозреваете насколько вы изумительны</p>
-						<a class="btn" href="#">Заказать</a>
 					</div>
+					<a class="btn" href="#">Заказать</a>
 				</div>
-				<hr>
 			</div>
 		</div>
 		<!-- end features -->
@@ -148,16 +145,16 @@
 		<!-- RECENT-WORKS -->
 		<div class="recent-works">
 			<div class="recent-works-container">
-				<a class="html-academy" href="#">
+				<a class="recent-logo" href="#">
 					<img src="http://placehold.it/150x100" alt="html-academy" height="180" width="260">
 				</a>
-				<a class="borodinski" href="#">
+				<a class="recent-logo" href="#">
 					<img src="http://placehold.it/150x100" alt="borodinski" height="180" width="260">
 				</a>
-				<a class="pink" href="#">
+				<a class="recent-logo" href="#">
 					<img src="http://placehold.it/150x100" alt="pink" height="180" width="260">
 				</a>
-				<a class="mishka" href="#">
+				<a class="recent-logo" href="#">
 					<img src="http://placehold.it/150x100" alt="mishka" height="180" width="260">
 				</a>
 			</div>
@@ -168,71 +165,65 @@
 	<!-- FOOTER -->
 
 	<footer class="main-footer">
-
-		<!-- MAP -->
-		<div class="map-container">
+		<div class="footer-container">
+		
+			<!-- MAP -->
 			<div id="map" class="map"></div>
 
 
     		<!-- CONTACTS -->
 			<div class="contacts">
-				<div class="contacts-container">
-					<h3>nёrds design studio</h3>
-					<p>191186, Санкт-Петербург,<br>
-					ул. Б. Конюшенная, д.19/8 тел.<br> 
-					+7(812)275-75-75</p>
-					<a  class="btn" href="">Напишите нам</a>
+				<h3>nёrds design studio</h3>
+				<p>191186, Санкт-Петербург,<br>
+				ул. Б. Конюшенная, д.19/8 тел.<br> 
+				+7(812)275-75-75</p>
+				<a  class="btn" href="">Напишите нам</a>
+			</div>
+			<!-- end contacts -->
+
+
+			<!-- MODAL WINDOW -->
+			<div class="modal-window">
+				<div class="modal-window-container">
+					<form action="#" method="post">
+						<fieldset>
+							<legend>Напишите нам</legend>
+							<label>
+								Ваше имя:
+								<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+							</label>
+							<label>
+								Ваш e-mail:
+								<input type="email" name="e-mail" placeholder="Для отправки ответа">
+							</label>
+							<label>
+								Текст письма:
+								<textarea rows="4" name="message" placeholder="В свободной форме"></textarea>
+							</label>
+							<button class="btn">Отправить</button>
+						</fieldset>
+					</form>
 				</div>
-				<!-- end contacts -->
-
-
-				<!-- MODAL WINDOW -->
-				<div class="modal-window">
-					<div class="modal-window-container">
-						<form action="#" method="post">
-							<fieldset>
-								<legend>Напишите нам</legend>
-								<label>
-									Ваше имя:
-									<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-								</label>
-								<label>
-									Ваш e-mail:
-									<input type="email" name="e-mail" placeholder="Для отправки ответа">
-								</label>
-								<label>
-									Текст письма:
-									<textarea rows="4" name="message" placeholder="В свободной форме"></textarea>
-								</label>
-								<button class="btn">Отправить</button>
-							</fieldset>
-						</form>
+			</div>
+			<!-- end modal window -->
+		
+			<!-- SOCIAL -->
+			<div class="social">
+				<div class="social-container">
+					<div class="social-icons">
+						<a href="#">Вконтакте</a>
+						<a href="#">Facebook</a>
+						<a href="#">Instagram</a>
+					</div>
+					<div class="social-text">
+						<b>Давайте дружить, это выгодно!</b>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
 					</div>
 				</div>
 			</div>
-				<!-- end modal window -->
+			<!-- end social -->
+
 		</div>
-		<!-- end map -->
-
-		<!-- SOCIAL -->
-		<div class="social">
-			<div class="social-container">
-				<div class="social-icons">
-					<a href="#">Вконтакте</a>
-					<a href="#">Facebook</a>
-					<a href="#">Instagram</a>
-				</div>
-				<div class="social-text">
-					<div class="social-text-container">
-						<p><span>Давайте дружить, это выгодно!</span>
-						Скидка 10% для друзей из социальных сетей.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end social -->
-
-
 	</footer>
 </body>
 </html>
