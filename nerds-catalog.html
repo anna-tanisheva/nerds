@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Магазин готовых шаблонов</title>
+	<link rel="stylesheet"  type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 
@@ -11,26 +13,28 @@
 
 	<header class="main-header">
 		<div class="container clearfix">
-			<a class="logo" href="#">
+			<a class="logo" href="index.html">
 				<img src="img/nerds-logo.png" alt="nёrds" height="65" width="160">
 			</a>
-			<nav class="nav-bar">	
+			<nav class="nav-bar inner">	
 				<ul>
 					<li>
-						<a class="nav-item" href="#">Студия</a>
+						<a class="nav-item" href="index.html">Студия</a>
 					</li>
 					<li>
 						<a class="nav-item" href="#">Клиенты</a>
 					</li>
-					<li>
-						<a class="nav-item" href="#">Магазин</a>
+					<li class="active">
+						<a class="nav-item" href="nerds-catalog.html">Магазин</a>
 					</li>
 					<li>
 						<a class="nav-item" href="#">Контакты</a>
 					</li>
 				</ul>
 			</nav>
-			<a class="cart" href="#">Корзина</a>
+			<div class="cart">
+				<a href="#">Корзина</a>
+			</div>
 		</div>	
 	</header>
 
@@ -38,15 +42,18 @@
 
 	<main>
 		<div class="content">
-			<div class="container">
-				<div class="catalog-item">
+			<div class="catalog-item">
+				<div class="container">
 					<h1>Магазин готовых шаблонов</h1>
 				</div>
+			</div>
+			<div class="container">
 
 
 				<!-- LEFT SECTION -->
 				<div class="left-section">
 					<form action="#" method="get">
+						<b class="form-caption">Стоимость:</b>
 						<div class="range-filter">
 							<div class="range-controls">
 								<div class="scale">
@@ -56,51 +63,51 @@
 									<div class="toggle toggle-max"></div>
 								</div>
 								<div class="price-controls">
-									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-									<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+									<label class="min-price price">от <input name="min-price" type="text" value="0"></label>
+									<label class="max-price price">до <input name="max-price" type="text" value="15000"></label>
 								</div>
 							</div>
 						</div>
 
 						<fieldset class="grid">
-							<legend class="form-caption">Сетка</legend>
-							<label>
-								<input type="radio" value="adaptive" name="grid" checked>
+							<legend class="form-caption">Сетка: </legend>
+							<input type="radio" id="adaptive-id" value="adaptive" name="grid" checked disabled>
+							<label for="adaptive-id">
 								Адаптивная
 							</label>
-							<label>
-								<input type="radio" value="fixed" name="grid">
+							<input type="radio" id="fixed-id" value="fixed" name="grid" disabled>
+							<label for="fixed-id">
 								Фиксированная
 							</label>
-							<label>
-								<input type="radio" value="fluid" name="grid">
+							<input type="radio" id="fluid-id" value="fluid" name="grid">
+							<label for="fluid-id">
 								Резиновая
 							</label>
 						</fieldset>
-						<fieldset class="features">
-							<legend class="form-caption">Особенности</legend>
-							<label>
-								<input type="checkbox" name="slider" checked>
+						<fieldset class="features-form">
+							<legend class="form-caption">Особенности:</legend>
+							<input type="checkbox" id="slider-id" name="slider" checked disabled>
+							<label for="slider-id">
 								Слайдер
 							</label>
-							<label>
-								<input type="checkbox" name="advantage-block">
+							<input type="checkbox" id="adv-block-id" name="advantage-block">
+							<label for="adv-block-id">
 								Блок преимуществ
 							</label>
-							<label>
-								<input type="checkbox" name="news" checked>
+							<input type="checkbox" id="news-id" name="news" checked>
+							<label for="news-id">
 								Новости
 							</label>
-							<label>
-								<input type="checkbox" name="gallery">
+							<input type="checkbox" id="gallery-id" name="gallery" disabled>
+							<label for="gallery-id">
 								Галерея
 							</label>
-							<label>
-								<input type="checkbox" name="cart">
+								<input type="checkbox" id="cart-id" name="cart">
+							<label for="cart-id">
 								Корзина
 							</label>
 						</fieldset>
-						<button type="submit">Показать</button>
+						<button class="button" type="submit">Показать</button>
 					</form>
 				</div>
 				<!-- end left section -->
@@ -108,7 +115,7 @@
 				<!-- RIGHT SECTION -->
 				<div class="right-section">
 					<div class="sorting">
-						<b class="form-caption">Cортировать</b>
+						<b class="form-caption">Cортировать:</b>
 						<ul>
 							<li><a href="#">По цене</a></li>
 							<li><a href="#">По типу</a></li>
@@ -126,7 +133,7 @@
 						<article class="gallery-item">
 							<img src="img/img-sedona.jpg" alt="sedona"  height="575" width="359">
 							<div class="hover">
-								<h3><a href="#">Sedona</a></h3>
+								<h3><a class="item-name" href="#">Sedona</a></h3>
 								<p>Информационный сайт для туристов</p>
 								<a class="btn" href="#">9 900 руб.</a>
 							</div>
@@ -134,7 +141,7 @@
 						<article class="gallery-item">
 							<img src="img/img-pink.jpg" alt="pink" height="575" width="359">
 							<div class="hover">
-								<h3><a href="#">Pink app</a></h3>
+								<h3><a class="item-name" href="#">Pink app</a></h3>
 								<p>Продуктовый лендинг приложения для iOS и Android</p>
 								<a class="btn" href="#">9 900 руб.</a>
 							</div>
@@ -142,7 +149,7 @@
 						<article class="gallery-item">
 							<img src="img/img-barbershop.jpg" alt="barbershop" height="575" width="359">
 							<div class="hover">
-								<h3><a href="#">Barbershop</a></h3>
+								<h3><a class="item-name" href="http://barbershop.websciurus.com/" target="_blank">Barbershop</a></h3>
 								<p>Сайт салона красоты. Для мужчин, да.</p>
 								<a class="btn" href="#">9 900 руб.</a>
 							</div>
@@ -150,7 +157,7 @@
 						<article class="gallery-item">
 							<img src="img/img-mishka.jpg" alt="mishka" height="575" width="359">
 							<div class="hover">
-								<h3><a href="#">Mishka</a></h3>
+								<h3><a class="item-name" href="#">Mishka</a></h3>
 								<p>Интернет-магазин вязанных игрушек</p>
 								<a class="btn" href="#">9 900 руб.</a>
 							</div>
@@ -158,7 +165,7 @@
 						<article class="gallery-item">
 							<img src="img/img-aplus.jpg" alt="a-plus" height="575" width="359">
 							<div class="hover">
-								<h3><a href="#">A plus</a></h3>
+								<h3><a class="item-name" href="#">A plus</a></h3>
 								<p>Лендинг курсов повышения квалификации</p>
 								<a class="btn" href="#">9 900 руб.</a>
 							</div>
@@ -166,7 +173,7 @@
 						<article class="gallery-item">
 							<img src="img/img-kvast.jpg" alt="kvast" height="575" width="359">
 							<div class="hover">
-								<h3><a href="#">Кваст</a></h3>
+								<h3><a class="item-name" href="#">Кваст</a></h3>
 								<p>Промо-сайт производителя крафтового кваса</p>
 								<a class="btn" href="#">9 900 руб.</a>
 							</div>
@@ -179,12 +186,12 @@
 
 				<!-- PAGINATOR -->
 				<div class="paginator">
-					<ul>
-						<li><span>1</span></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a class="button" href="#">Следующая</a></li>
-					</ul>
+					
+					<span class="paginator-item active">1</span>
+					<a class="paginator-item button" href="#">2</a>
+					<a class="paginator-item button" href="#">3</a>
+					<a class="paginator-item button btn" href="#">Следующая</a>
+					
 				</div>
 				<!-- end paginator -->
 			</div>
@@ -197,9 +204,9 @@
 					<div class="contacts">
 						<h3>nёrds design studio</h3>
 						<p>191186, Санкт-Петербург,<br>
-						ул. Б. Конюшенная, д.19/8 тел.<br> 
-						+7(812)275-75-75</p>
-						<a  class="btn" href="">Напишите нам</a>
+						ул. Б. Конюшенная, д. 19/8 <br></p>
+						<p>тел. +7 (812) 275-75-75</p>
+						<a  class="btn" href="#">Напишите нам</a>
 					</div>
 					<!-- end contacts -->
 
@@ -213,36 +220,13 @@
 
 	<footer class="main-footer">
 		<div class="container">
-
-			<!-- MODAL WINDOW -->
-			<div class="modal-window">
-				<form action="#" method="post">
-					<fieldset>
-						<legend>Напишите нам</legend>
-						<label>
-							Ваше имя:
-							<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-						</label>
-						<label>
-							Ваш e-mail:
-							<input type="email" name="e-mail" placeholder="Для отправки ответа">
-						</label>
-						<label>
-							Текст письма:
-							<textarea rows="4" name="message" placeholder="В свободной форме"></textarea>
-						</label>
-						<button class="btn">Отправить</button>
-					</fieldset>
-				</form>
-			</div>
-			<!-- end modal window -->
 		
 			<!-- SOCIAL -->
 			<div class="social">
 				<div class="social-icons">
-					<a href="#">Вконтакте</a>
-					<a href="#">Facebook</a>
-					<a href="#">Instagram</a>
+					<a class="social-vk" href="https://vk.com/" target="_blank">Вконтакте</a>
+					<a class="social-fb" href="https://facebook.com/" target="_blank">Facebook</a>
+					<a class="social-insta" href="https://instagram.com/" target="_blank">Instagram</a>
 				</div>
 				<div class="social-text">
 					<b>Давайте дружить, это выгодно!</b>
@@ -253,6 +237,30 @@
 
 		</div>
 	</footer>
+
+	<!-- MODAL WINDOW -->
+	<div class="modal-window inner">
+		<form action="#" method="post">
+			<fieldset class="write-us">
+				<legend>Напишите нам</legend>
+				<label>
+					<p>Ваше имя:</p>
+					<input type="text" name="name" id="name-id" placeholder="Представьтесь, пожалуйста">
+				</label>
+				<label>
+					<p>Ваш e-mail:</p>
+					<input type="email" name="e-mail" placeholder="Для отправки ответа">
+				</label>
+				<label class="textarea">
+					<p>Текст письма:</p>
+					<textarea rows="5" cols="89" name="message" placeholder="В свободной форме"></textarea>
+				</label>
+				<button class="btn">Отправить</button>
+				<button class="close" type="button" title="Закрыть">Закрыть</button>
+			</fieldset>
+		</form>
+	</div>
+	<!-- end modal window -->
 
 	<!-- Скрипт live reload -->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
