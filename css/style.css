@@ -8,7 +8,6 @@ body {
 }
 
 .main-header {
-	width: 1200px;
 	margin: 0 auto;
 	min-height: 67px;
 	padding-top: 49px;
@@ -43,7 +42,8 @@ body {
 
 .btn {
 	display: inline-block;
-	border-radius: 2px;
+	border-radius: 4px;
+	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
 	text-decoration: none;
@@ -52,10 +52,19 @@ body {
 	background-color: #fb565a;
 }
 
+.btn:hover {
+	background-color: #e74246;
+}
+
+.btn:active {
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 3px rgba(193, 49, 53, 1);
+}
+
+
 h1 {
 	margin: 0;
-	margin-left: 218px;
-	width: 760px;
 	font-family: "Roboto", Arial, sans-serif;
 	font-weight: 500;
 	font-size: 55px;
@@ -260,16 +269,6 @@ HEADER STYLES
 /* CONTACTS-BTN */
 .contacts .btn {
 	padding: 16px 45px;
-}
-
-.contacts .btn:hover {
-	background-color: #e74246;
-}
-
-.contacts .btn:active {
-	background-color: #d7373b;
-	color: rgba(255, 255, 255, 0.3);
-	box-shadow: inset 0 3px rgba(193, 49, 53, 0.1);
 }
 
 /* end contacts */
@@ -602,18 +601,10 @@ MODAL-WINDOW
 
 .modal-window .btn {
 	border: 0;
+	outline: none;
 	padding: 16px 82px;
 }
 
-.modal-window .btn:hover {
-	background-color: #e74246;
-}
-
-.modal-window .btn:active {
-	background-color: #d7373b;
-	color: rgba(255, 255, 255, 0.3);
-	box-shadow: inset 0 3px rgba(193, 49, 53, 0.1);
-}
 
 /* end modal-window */
 
@@ -628,7 +619,6 @@ SLIDER
 
 
 .slider {
-	width: 1200px;
 	background-color: #eeeeee;
 	margin: 0 auto;
 	margin-bottom: 80px;
@@ -712,13 +702,7 @@ SLIDER
 }
 
 .slide .btn {
-	display: inline-block;
-	padding: 16px 57px;
-	font-size: 15px;
-	text-align: center;
-	text-decoration: none;
-	background: #fb565a;
-
+	padding: 16px 55px;
 }
 
 .slide:nth-child(1) {
@@ -811,15 +795,6 @@ SLIDER
 	padding: 16px 41px;
 }
 
-.sites .btn:hover {
-	background-color: #e74246;
-}
-
-.sites .btn:active {
-	color: rgba(255, 255, 255, 0.3);
-	background-color: #d7373b;
-	box-shadow: inset 0 3px rgba(193, 49, 53, 0.1);
-}
 
 .apps .btn {
 	background-color: #00ca74;
@@ -1072,6 +1047,11 @@ SLIDER
 	background-color: #eeeeee;
 }
 
+.catalog-item h1 {
+	margin: 0 auto;
+	text-align: center;
+}
+
 
 /*======================================================================================================================
  LEFT SECTION STYLES
@@ -1316,11 +1296,7 @@ input[type="checkbox"]:disabled + label {
 .left-section .button {
 	padding: 16px 89px; 
 	border: 0;
-	border-radius: 4px;
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: 500;
-	text-transform: uppercase;
+	color: #000000;
 	background-color: #eeeeee;
 	outline: none;
 }
@@ -1509,20 +1485,6 @@ input[type="checkbox"]:disabled + label {
 	left: 17px;
 }
 
-.gallery-item:hover::after,
-.gallery-item:hover::before,
-.gallery-item-wrapper:hover::after,
-.gallery-item:hover .gallery-item-wrapper::after {
-	display: none;
-}
-
-.gallery-item:active::after,
-.gallery-item:active::before,
-.gallery-item-wrapper:active::after,
-.gallery-item:active .gallery-item-wrapper::after {
-	display: block;
-}
-
 .gallery-item .hover {
 	position: absolute;
 	display: none;
@@ -1555,20 +1517,9 @@ input[type="checkbox"]:disabled + label {
 }
 
 .hover .btn {
-	display: inline-block;
 	margin-left: 78px;
 	margin-top: 30px;
 	padding: 16px 60px;
-	border-radius: 4px;
-}
-
-.hover .btn:hover {
-	background-color: #e74246;
-}
-
-.hover .btn:active {
-	background-color: #d7373b;
-	box-shadow: inset 0 3px rgb(193, 49, 53);
 }
 
 .gallery-item:hover .hover {
@@ -1576,12 +1527,9 @@ input[type="checkbox"]:disabled + label {
 }
 
 .gallery-item:hover {
-	border-top: 40px solid #d6494d;
-}
-
-.gallery-item:active {
 	border-top: 40px solid #4d4d4d;
 }
+
 
 /* end gallery */
 
