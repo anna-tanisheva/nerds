@@ -45,15 +45,18 @@
 		<div class="slider">
 			<div class="container">
 				<div class="slider-wrapper">
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
 					<div class="slider-controls">
-							<i class="active"></i>
-							<i></i>
-							<i></i>
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>			
 					</div>
 					<div class="slides">
 						<div class="slide">
 							<div class="slide-text">
-								<b class="slide-title">Долго, дорого, скрупулезно</b>
+								<b class="slide-title">Долго, дорого, скрупулезно.</b>
 								<p>Математически выверенный дизайн <br>
 								для вашего сайта или мобильного приложения.</p>
 								<a class="btn" href="#">Узнать больше</a>
@@ -133,12 +136,12 @@
 						<h4>Выполняем заказы на разработку:</h4>
 						<ul class="service">
 							<li>Веб-сайтов любой сложности</li>
-							<li>Мобильных приложений для iOS и Andriod</li>
+							<li>Мобильных приложений для iOS и Android</li>
 							<li>Слайдшоу и видео для корпоративных презентаций</li>
 						</ul>
 					</div>
 					<div class="about-right">
-						<img src="img/nerds-illustration.jpg" alt="nёrds" height="210" width="360">
+						<img src="img/nerds-illustration.jpg" alt="nёrds" height="208" width="360">
 						<h4>С 2004 года любим точность во всем:</h4>
 						<ul class="guaranty">
 							<li><span class="percent">146<b>%</b></span> <span class="text">Уровень самоотдачи</span></li>
@@ -228,18 +231,19 @@
 		<form action="#" method="post">
 			<fieldset class="write-us">
 				<legend>Напишите нам</legend>
-				<label>
-					<p>Ваше имя:</p>
-					<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+				<label for="name-id">
+					Ваше имя:
 				</label>
-				<label>
-					<p>Ваш e-mail:</p>
-					<input type="email" name="e-mail" placeholder="Для отправки ответа">
+				<label for="e-mail-id">
+					Ваш e-mail:
 				</label>
-				<label class="textarea">
-					<p>Текст письма:</p>
-					<textarea rows="5" cols="89" name="message" placeholder="В свободной форме"></textarea>
+				<input type="text" name="name" id="name-id" placeholder="Представьтесь, пожалуйста">
+				
+				<input type="email" name="e-mail" id="e-mail-id" placeholder="Для отправки ответа">
+				<label class="textarea" for="message-id">
+					Текст письма:
 				</label>
+				<textarea rows="5" cols="89" name="message" id="message-id" placeholder="В свободной форме"></textarea>
 				<button class="btn">Отправить</button>
 				<button class="close" type="button" title="Закрыть">Закрыть</button>
 			</fieldset>
