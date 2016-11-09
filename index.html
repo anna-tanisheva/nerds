@@ -3,10 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet"  type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-
 </head>
 <body>
 
@@ -19,23 +18,23 @@
 			</a>
 			<nav class="nav-bar">	
 				<ul>
-					<li class="active">
-						<a class="nav-item" href="#">Студия</a>
+					<li class="nav-item active">
+						<a href="#">Студия</a>
 					</li>
-					<li>
-						<a class="nav-item" href="#">Клиенты</a>
+					<li class="nav-item">
+						<a href="#">Клиенты</a>
 					</li>
-					<li>
-						<a class="nav-item" href="nerds-catalog.html">Магазин</a>
+					<li class="nav-item">
+						<a href="nerds-catalog.html">Магазин</a>
+					</li >
+					<li class="nav-item">
+						<a href="#">Контакты</a>
 					</li>
-					<li>
-						<a class="nav-item" href="#">Контакты</a>
+					<li class="nav-item cart active">
+						<a href="#">Корзина</a>
 					</li>
 				</ul>
 			</nav>
-			<div class="cart">
-				<a href="#">Корзина</a>
-			</div>
 		</div>	
 	</header>
 
@@ -45,34 +44,39 @@
 		<!-- SLIDER -->
 		<div class="slider">
 			<div class="container">
-				<div class="slider-item active">
-					<div class="slider-caption">
-						<b class="slider-header">Долго, дорого, скрупулезно.</b>
-						<p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+				<div class="slider-wrapper">
+					<div class="slider-controls">
+							<i class="active"></i>
+							<i></i>
+							<i></i>
 					</div>
-					<div class="slider-img">
-						<img src="img/slider-1.jpg" alt="slide1" height="421" width="760">
-					</div>
-					<a class="btn" href="#">Узнать больше</a>
-				</div>
-				<div class="slider-item">
-					<div class="slider-caption">
-						<b class="slider-header">Любим математику как никто другой</b>
-						<p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
-					</div>
-					<a class="btn" href="#">Узнать больше</a>
-					<div class="slider-img">
-						<img src="img/slider-2.jpg" alt="slide2" height="421" width="760">
-					</div>
-				</div>
-				<div class="slider-item">
-					<div class="slider-caption">
-						<b class="slider-header">Только ночь, <br>только хардкор</b>
-						<p>Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
-					</div>
-					<a class="btn" href="#">Узнать больше</a>
-					<div class="slider-img">
-						<img src="img/slider-3.jpg" alt="slide3.jpeg" height="421" width="760">
+					<div class="slides">
+						<div class="slide">
+							<div class="slide-text">
+								<b class="slide-title">Долго, дорого, скрупулезно</b>
+								<p>Математически выверенный дизайн <br>
+								для вашего сайта или мобильного приложения.</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="slide-text">
+								<b class="slide-title">Любим математику как никто другой</b>
+								<p>Никакого креатива, только математические формулы <br> для расчета идеальных пропорций.
+								</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="slide-text">
+								<b class="slide-title">Только ночь, <br>только хардкор</b>
+								<p>Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -124,7 +128,7 @@
 				<!-- ABOUT -->
 				<div class="about clearfix">
 					<div class="about-left">
-						<p class="lead"><b>Мы &#8212 маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+						<p class="lead"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
 						<p class="text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 						<h4>Выполняем заказы на разработку:</h4>
 						<ul class="service">
@@ -147,26 +151,26 @@
 
 				<!-- RECENT-WORKS -->
 				<div class="recent-works">
-					<!-- <div class="vertical-line"> -->
+					<div class="vertical-line">
 						<a class="recent-logo" href="https://htmlacademy.ru/" target="_blank">
 							<img src="img/logo-1.png" alt="html-academy" height="68" width="199">
 						</a>
-					<!-- </div> -->
-					<!-- <div class="vertical-line"> -->
+					</div>
+					<div class="vertical-line">
 						<a class="recent-logo" href="http://barbershop.websciurus.com/" target="_blank">
 							<img src="img/logo-2.png" alt="borodinski" height="90" width="210">
 						</a>
-					<!-- </div> -->
-					<!-- <div class="vertical-line"> -->
+					</div>
+					<div class="vertical-line">
 						<a class="recent-logo" href="#">
 							<img src="img/logo-3.png" alt="pink" height="52" width="185">
 						</a>
-					<!-- </div> -->
-					<!-- <div class="vertical-line"> -->
+					</div>
+					<div class="vertical-line">
 						<a class="recent-logo" href="#">
 							<img src="img/logo-4.png" alt="mishka" height="84" width="173">
 						</a>
-					<!-- </div> -->
+					</div>
 				</div>
 				<!-- end recent-works -->
 
