@@ -26,10 +26,6 @@ img {
 	padding-bottom: 67px;
 }
 
-.content {
-	width: 1200px;
-	margin: 0 auto;
-}
 
 .clearfix {
 	content: "";
@@ -379,6 +375,7 @@ MODAL-WINDOW
 
 .modal-window {
 	display: none;
+	font-size: 0px;
 	position: absolute;
 	top: 168%;
 	left: 50%;
@@ -443,6 +440,7 @@ MODAL-WINDOW
 }
 
 .modal-window legend {
+
 	margin: 0;
 	margin-bottom: 41px;
 	padding: 0;
@@ -463,6 +461,7 @@ MODAL-WINDOW
 .modal-window label {
 	display: inline-block;
 	vertical-align: top;
+	font-size: 16px;
 	width: 360px;
 	margin: 0;
 	padding: 0;
@@ -493,6 +492,7 @@ MODAL-WINDOW
 	padding-left: 13px;
 	border: 2px solid #d7dcde;
 	border-radius: 5px;
+	font-size: 16px;
 	font-weight: 500;
 }
 
@@ -546,11 +546,14 @@ MODAL-WINDOW
 }
 
 .modal-window textarea {
-	margin-bottom: 41px;
+;
+	margin-bottom: 34px;
 	padding: 11px 14px;
 	border: 2px solid #d7dcde;
 	border-radius: 5px;
+	font-size: 16px;
 }
+
 
 /* переопределение цвета текста в placeholder */
 .modal-window textarea::-webkit-input-placeholder {
@@ -597,11 +600,8 @@ MODAL-WINDOW
 	border: 0;
 	outline: none;
 	padding: 16px 82px;
+	font-weight: 500;
 }
-
-
-/* end modal-window */
-
 
 
 
@@ -734,6 +734,7 @@ SLIDER
 
 .features {
 	border-bottom: 2px solid #eeeeee;
+	font-size: 0px;
 }
 
 .features-item {
@@ -776,6 +777,7 @@ SLIDER
 .features-text p {
 	width: 260px;
 	margin-bottom: 32px;
+	font-size: 16px;
 }
 
 .features-img {
@@ -830,6 +832,7 @@ SLIDER
 	margin-bottom: 46px;
 	margin-top: 39px;
 	border-bottom: 2px solid #eeeeee;
+	font-size: 0;
 }
 
 
@@ -840,6 +843,7 @@ SLIDER
 	vertical-align: top;
 	width: 700px;
 	margin-right: 99px;
+	font-size: 16px;
 }
 
 
@@ -911,14 +915,15 @@ SLIDER
 }
 
 .about-right h4 {
-	margin-top: 27px;
+	margin-top: 24px;
 	margin-left: 17px;
-	margin-bottom: 49px;
+	margin-bottom: 48px;
 }
 
 .guaranty {
 	margin: 0;
 	padding: 0;
+	margin-left: 4px;
 }
 
 .guaranty li {
@@ -936,6 +941,8 @@ SLIDER
 }
 
 .percent {
+	display: block;
+	min-height: 40px;
 	font-weight: 700;
 	font-size: 45px;
 	line-height: 10.06px;
