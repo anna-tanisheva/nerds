@@ -418,11 +418,13 @@ MODAL-WINDOW
 }
 
 .close::before {
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 
 .close::after {
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 }
 
 .close:hover::before,
@@ -1403,7 +1405,8 @@ input[type="checkbox"]:disabled + label {
 }
 
 .sort-arrows a:last-child {
-	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	        transform: rotate(180deg);
 	margin-left: 18px;
 	margin-top: -5px;
 }
@@ -1581,111 +1584,3 @@ input[type="checkbox"]:disabled + label {
 /* end paginator */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*===================================================================================================
-ВСПОМОГАТЕЛЬНЫЕ СТИЛИ
-=====================================================================================================*/
-
-
-
-/* Стили для подсветки блоков
-header, footer {
-	background-color: rgba(36, 104, 181, .2);
-}
- */
-/* .container {
-	background-color: rgba(184, 158, 131, .2)
-}
- */
-/* .left-section, .right-section {
-	background-color: rgba(190, 166, 131, .2);
-}
- */
-
-
-/* Стили для спрайта */
-
-/* .sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-icon-cart {
-    width: 15px;
-    height: 15px;
-    background-position: -5px -5px;
-}
-
-.sprite-icon-checkbox-off {
-    width: 23px;
-    height: 23px;
-    background-position: -5px -30px;
-}
-
-.sprite-icon-checkbox-on {
-    width: 27px;
-    height: 23px;
-    background-position: -5px -63px;
-}
-
-.sprite-icon-close-cross {
-    width: 21px;
-    height: 21px;
-    background-position: -5px -96px;
-}
-
-.sprite-icon-fb {
-    width: 12px;
-    height: 22px;
-    background-position: -5px -127px;
-}
-
-.sprite-icon-insta {
-    width: 21px;
-    height: 21px;
-    background-position: -5px -159px;
-}
-
-.sprite-icon-radio {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -190px;
-}
-
-.sprite-icon-radio-on {
-    width: 25px;
-    height: 25px;
-    background-position: -5px -225px;
-}
-
-.sprite-icon-service-list {
-    width: 25px;
-    height: 2px;
-    background-position: -5px -260px;
-}
-
-.sprite-icon-slider-round {
-    width: 20px;
-    height: 23px;
-    background-position: -5px -272px;
-}
-
-.sprite-icon-vk {
-    width: 26px;
-    height: 15px;
-    background-position: -5px -305px;
-} */
