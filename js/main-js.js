@@ -1,4 +1,4 @@
-var button = document.querySelector(".btn.write-us");
+var button = document.querySelector(".write-us");
 var popup = document.querySelector(".modal-window");
 
 var close = popup.querySelector(".close");
