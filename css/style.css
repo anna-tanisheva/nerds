@@ -592,6 +592,7 @@ MODAL-WINDOW
 	border: 2px solid #d7dcde;
 	border-radius: 5px;
 	font-size: 16px;
+	resize: none;
 }
 
 
