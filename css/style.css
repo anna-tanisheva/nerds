@@ -211,6 +211,7 @@ HEADER STYLES
  ======================================================================================================================*/
 
 .map {
+	position: relative;
 	width: 1200px;
 	margin: 0 auto;
 	padding-top: 52px;
@@ -219,15 +220,24 @@ HEADER STYLES
 	min-height: 362px;
 }
 
+.google-map {
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+}
 
 /*CONTACTS*/
 
 .contacts {
+	position: relative;
 	width: 268px;
 	min-height: 259px;
 	padding-top: 51px;
 	padding-left: 50px;
 	background-color: #ffffff;
+	z-index: 1;
 }
 
 .contacts h3 {
@@ -379,13 +389,48 @@ MODAL-WINDOW
 	position: absolute;
 	top: 168%;
 	left: 50%;
+	z-index: 100;
 	width: 760px;
-	margin-left: -380px;
+	margin-left: -448px;
 	min-height: 430px;
 	padding: 68px 100px 86px;
 	background-color: #ffffff;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
+
+.modal-window.inner {
+	top: 254%
+}
+
+@keyframes popup {
+	0% {
+		opacity: 0;
+		transform: rotate(-10deg);
+	}
+	
+	70% {
+		transform: rotate(5deg);
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.modal-window-show {
+	display: block;
+	animation: popup 1s;
+
+}
+
+.modal-window .input-error {
+	border-color: #e74246;
+}
+
+.modal-window .input-error::-webkit-input-placeholder {
+	color: #e74246;
+}
+
 
 .modal-window.inner {
 	top: 2400px;
@@ -496,6 +541,8 @@ MODAL-WINDOW
 	font-weight: 500;
 }
 
+
+
 .modal-window input[type="email"] {
 	margin-left: 37px;
 }
@@ -533,13 +580,6 @@ MODAL-WINDOW
 	outline: 0;
 }
 
-.modal-window input:invalid {
-	border-color: #e74246;
-}
-
-.modal-window input:invalid::-webkit-input-placeholder {
-	color: #e74246;
-}
 
 .modal-window .textarea {
 	display: block;
@@ -585,13 +625,6 @@ MODAL-WINDOW
 	outline: 0;
 }
 
-.modal-window textarea:invalid {
-	border-color: #e74246;
-}
-
-.modal-window textarea:invalid::-webkit-input-placeholder {
-	color: #e74246;
-}
 
 
 /* MODAL-WINDOW BTN */
