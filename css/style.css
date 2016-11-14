@@ -517,7 +517,7 @@ MODAL-WINDOW
 }
 
 
-.write-us label:nth-child(3) {
+.modal-write-us label:nth-child(3) {
 	padding-right: 0;
 }
 

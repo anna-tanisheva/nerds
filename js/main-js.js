@@ -9,22 +9,9 @@ var email = popup.querySelector("[id=email-id]");
 var text = popup.querySelector("[id=message-id]");
 
 
-var storage_fullname = localStorage.getItem("fullname");
-var storage_email = localStorage.getItem("email");
-
-
 button.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.add("modal-window-show");
-	if (storage_fullname) {
-		fullname.value = storage_fullname;
-		email.focus();
-	} if (storage_email) {
-		email.value = storage_email;
-		text.focus();
-	} else {
-		fullname.focus();
-	}
 });
 
 
@@ -61,9 +48,6 @@ form.addEventListener("submit", function(event) {
 			})) {
 			}
 		}	
-	} else {
-		localStorage.setItem("fullname", fullname.value);
-		localStorage.setItem("email", email.value);
 	}
 })
 
