@@ -1,8 +1,28 @@
+@font-face {
+	font-family: "RobotoBoldCondensed";
+	src: url("../fonts/Roboto-BoldCondensed.ttf")
+}
+
+@font-face {
+	font-family: "RobotoBlack";
+	src: url("../fonts/Roboto-Black.ttf")
+}
+
+@font-face {
+	font-family: "RobotoBold";
+	src: url("../fonts/Roboto-Bold.ttf")
+}
+
+@font-face {
+	font-family: "RobotoCondensed";
+	src: url("../fonts/Roboto-Condensed.ttf")
+}
+
 body {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
-	line-height: 24px;
  	font-weight: 400;
+	line-height: 24px;
 	color: #283136;
 	background-color: white;
 }
@@ -42,6 +62,7 @@ img {
 
 .btn {
 	display: inline-block;
+	vertical-align: top;
 	border-radius: 4px;
 	font-size: 16px;
 	font-weight: 500;
@@ -65,15 +86,15 @@ img {
 
 h1 {
 	margin: 0;
-	font-weight: 500;
 	font-size: 55px;
+	font-weight: 500;
 	line-height: 55px;
 	color: #000000;
 }
 
 h2 {
-	font-weight: 700;
 	font-size: 24px;
+	font-weight: 700;
 	line-height: 30px;
 	color: #000000;
 }
@@ -81,18 +102,18 @@ h2 {
 h3 {
 	margin: 0;
 	font-size: 18px;
-	line-height: 30px;
 	font-weight: 700;
+	line-height: 30px;
 	text-transform: uppercase;
 
 }
 
 h4 {
-	color: #000000;
 	font-size: 16px;
-	line-height: 24px;
 	font-weight: 700;
+	line-height: 24px;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 fieldset {
@@ -178,10 +199,10 @@ HEADER STYLES
 /* CART */
 
 .cart {
+	position: relative;
 	float: right;
 	width: 75px;
 	margin-top: 26px;
-	position: relative;
 	padding-left: 40px;
 }
 
@@ -189,10 +210,10 @@ HEADER STYLES
 .cart::before {
 	content: "";
 	position: absolute;
-    width: 15px;
-    height: 15px;
 	top: 24%;
 	left: 1px;
+    width: 15px;
+    height: 15px;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
     background-position: -5px -5px;
@@ -213,15 +234,15 @@ HEADER STYLES
 .map {
 	position: relative;
 	width: 1200px;
+	min-height: 362px;
 	margin: 0 auto;
 	padding-top: 52px;
 	background-image: url("../img/map-marker2.png");
 	background-color: #e9e5dc;
-	min-height: 362px;
 }
 
 .google-map {
-	position:absolute;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -232,12 +253,17 @@ HEADER STYLES
 
 .contacts {
 	position: relative;
+	z-index: 1;
 	width: 268px;
 	min-height: 259px;
-	padding-top: 51px;
+	padding-top: 46px;
 	padding-left: 50px;
 	background-color: #ffffff;
-	z-index: 1;
+}
+
+.contacts.inner{
+	padding-top: 50px;
+
 }
 
 .contacts h3 {
@@ -248,8 +274,8 @@ HEADER STYLES
 .contacts p {
 	margin-bottom: 0;
 	font-size: 16px;
-	line-height: 18px;
 	font-weight: 400;
+	line-height: 18px;
 	color: #666666;
 }
 
@@ -273,7 +299,11 @@ FOOTER STYLES
 
 .main-footer {
 	margin: 0 auto;
-	padding-top: 70px;
+	padding-top: 65px;
+}
+
+.main-footer.inner {
+	padding-top: 69px;	
 }
 
 .social {
@@ -288,9 +318,9 @@ FOOTER STYLES
 }
 
 .social-icons a {
+	position: relative;
 	display: inline-block;
 	vertical-align: middle;
-	position: relative;
 	height: 80px;
 	width: 80px;
 	border-radius: 50%;
@@ -364,8 +394,8 @@ FOOTER STYLES
 
 .social-text b {
 	font-size: 36px;
-	line-height: 36px;
 	font-weight: 700;
+	line-height: 36px;
 	color: #000000;
 }
 
@@ -384,32 +414,48 @@ MODAL-WINDOW
 ======================================================================================================================*/
 
 .modal-window {
-	display: none;
-	font-size: 0px;
 	position: absolute;
 	top: 168%;
 	left: 50%;
 	z-index: 100;
+	display: none;
 	width: 760px;
-	margin-left: -448px;
 	min-height: 430px;
+	margin-left: -448px;
 	padding: 68px 100px 86px;
+	font-size: 0px;
 	background-color: #ffffff;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
-.modal-window.inner {
-	top: 254%
+
+@-webkit-keyframes popup {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(-10deg);
+		        transform: rotate(-10deg);
+	}
+	
+	70% {
+		-webkit-transform: rotate(5deg);
+		        transform: rotate(5deg);
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes popup {
 	0% {
 		opacity: 0;
-		transform: rotate(-10deg);
+		-webkit-transform: rotate(-10deg);
+		        transform: rotate(-10deg);
 	}
 	
 	70% {
-		transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
+		        transform: rotate(5deg);
 	}
 
 	100% {
@@ -419,7 +465,8 @@ MODAL-WINDOW
 
 .modal-window-show {
 	display: block;
-	animation: popup 1s;
+	-webkit-animation: popup 1s;
+	        animation: popup 1s;
 
 }
 
@@ -485,13 +532,12 @@ MODAL-WINDOW
 }
 
 .modal-window legend {
-
 	margin: 0;
 	margin-bottom: 41px;
 	padding: 0;
 	font-size: 45px;
-	line-height: 45px;
 	font-weight: 400;
+	line-height: 45px;
 }
 
 .modal-window fieldset {
@@ -506,12 +552,12 @@ MODAL-WINDOW
 .modal-window label {
 	display: inline-block;
 	vertical-align: top;
-	font-size: 16px;
 	width: 360px;
 	margin: 0;
-	padding: 0;
 	margin-bottom:11px;
+	padding: 0;
 	padding-right: 36px;
+	font-size: 16px;
 	font-weight: 700;
 	line-height: 18px;
 }
@@ -586,7 +632,6 @@ MODAL-WINDOW
 }
 
 .modal-window textarea {
-;
 	margin-bottom: 34px;
 	padding: 11px 14px;
 	border: 2px solid #d7dcde;
@@ -631,9 +676,9 @@ MODAL-WINDOW
 /* MODAL-WINDOW BTN */
 
 .modal-window .btn {
+	padding: 16px 82px;
 	border: 0;
 	outline: none;
-	padding: 16px 82px;
 	font-weight: 500;
 }
 
@@ -647,9 +692,9 @@ SLIDER
 
 
 .slider {
-	background-color: #eeeeee;
 	margin: 0 auto;
 	margin-bottom: 80px;
+	background-color: #eeeeee;
 }
 
 .slider-wrapper {
@@ -667,22 +712,22 @@ SLIDER
 	position: absolute;
 	bottom: 98px;
 	left: 50%;
+	z-index: 1000;
 	width: 200px;
 	height: 16px;
 	margin-left: -100px;
 	text-align: center;
-	z-index: 1000;
 }
 
 .slider-controls label {
 	display: inline-block;
+	vertical-align: top;
 	width: 5px;
 	height: 5px;
 	margin: -1px 6px;
-	background: white;
 	border: 7px solid white;
-	vertical-align: top;
 	border-radius: 50%;
+	background: white;
 	cursor: pointer;
 }
 
@@ -703,24 +748,53 @@ SLIDER
 }
 
 .slide-text {
-	width: 560px;
+	width: 420px;
 	padding: 67px 0;
 }
 
 .slide-text p {
+	position: relative;
+	width: 410px;
+	max-height: 3.6em;
 	margin: 0;
 	margin-top: 26px;
 	margin-bottom: 40px;
+	margin-right: 3em;
+	padding-right: 2em;
+	overflow: hidden;
+	line-height: 1.5em;
 }
+
+
+/*правило на случай переполнения*/
+.slide-text p::before {
+	content: "...";
+	position: absolute;
+	right: 13px;
+  	bottom: 0;
+}
+
+.slide-text p::after {
+	content: "";
+	position: absolute;
+	right: 13px;
+	width: 1em;
+	height: 1em;
+	margin-top: 0.2em;
+	background: #eeeeee;
+}
+/*================================*/
+
+
 
 .slide-title {
 	display: block;
 	width: 532px;
+	font-family: "RobotoBold", Arial, sans-serif;
 	font-size: 55px;
 	line-height: 55px;
-	font-weight: 500;
 	color: #000000;
-	letter-spacing: -0.9px;
+
 }
 
 .slide .btn {
@@ -803,9 +877,9 @@ SLIDER
 }
 
 .features h2 {
-	text-transform: uppercase;
 	margin-top: 25px;
 	margin-bottom: 16px;
+	text-transform: uppercase;
 }
 
 .features-text p {
@@ -888,10 +962,10 @@ SLIDER
 }
 
 .lead b {
+	font-family: "RobotoBold", Arial, sans-serif;
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: 500;
-	letter-spacing: 0.4px;
+	font-weight: 700;
 	color: #000000;
 }
 
@@ -903,14 +977,12 @@ SLIDER
 .about-left h4 {
 	margin-top: 38px;
 	margin-bottom: 24px;
-	
-
 }
 
 .service {
 	margin: 0;
 	padding: 0;
-	padding-left: 36px;
+	padding-left: 37px;
 }
 .service li {
 	position: relative;
@@ -977,8 +1049,8 @@ SLIDER
 .percent {
 	display: block;
 	min-height: 40px;
-	font-weight: 700;
 	font-size: 45px;
+	font-weight: 700;
 	line-height: 10.06px;
 	color: #000000;
 }
@@ -995,10 +1067,11 @@ SLIDER
 /* RECENT-WORKS */
 
 .recent-works {
+	font-size: 0;
+	margin-bottom: 79px;
 	padding-bottom: 35px;
 	padding-top: 2px;
 	border-bottom: 2px solid #eeeeee;
-	margin-bottom: 79px;
 }
 
 .recent-works img[alt="html-academy"] {
@@ -1021,16 +1094,15 @@ SLIDER
 	height: 84px;
 }
 .recent-works a {
-
 	display: inline-block;
 	vertical-align: middle;
 	width: 260px;
-	margin-right: 36px;
+	margin-right: 40px;
 	text-align: center;
 	opacity: 0.2;
 }
 
-.recent-works a:last-child {
+.recent-works a:nth-child(4n) {
 	margin-right: 0;
 }
 
@@ -1044,12 +1116,13 @@ SLIDER
 .vertical-line {
 	position: relative;
 	display: inline-block;
+	vertical-align: middle;
 	width: 260px;
 
 /* 	outline: 1px solid black;
  */}
-.vertical-line:not(:last-child) {
-	margin-right: 36px;
+.vertical-line:not(:nth-child(4n)) {
+	margin-right: 40px;
 }
 .vertical-line:not(:first-child)::after {
 	content: "";
@@ -1096,14 +1169,14 @@ SLIDER
 .left-section {
 	display: inline-block;
 	vertical-align: top;
-	min-height: 773px;
 	width: 280px;
+	min-height: 773px;
 }
 
 .form-caption {
 	font-size: 18px;
-	line-height: 30px;
 	font-weight: 700;
+	line-height: 30px;
 	text-transform: uppercase;
 	color: #000000;
 
@@ -1155,8 +1228,8 @@ SLIDER
 	width: 4px;
 	height: 4px;
 	border: 8px solid white;
-	background: #ababab;
 	border-radius: 50%;
+	background: #ababab;
 	box-shadow: 0 2px 1px 0 #cfcfcf;
 	cursor: pointer;
 }
@@ -1172,27 +1245,27 @@ SLIDER
 
 .price-controls input {
 	width: 60px;
-	padding: 10px 10px;
 	margin-left: 10px;
+	padding: 10px 10px;
 	border: none;
-	background: #f1f1f1;
+	border-radius: 5px;
 	font-size: 16px;
 	font-family: "Roboto", Arial, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	text-align: center;
-	color: #283136;
-	border-radius: 5px;
 	letter-spacing: 1px;
+	color: #283136;
+	background: #f1f1f1;
 }
 
 .price-controls {
 	position: relative;
 	font-size: 16px;
-	line-height: 22px;
 	font-weight: 400;
-	color: #283136;
+	line-height: 22px;
 	text-transform: uppercase;
+	color: #283136;
 }
 
 .price {
@@ -1378,8 +1451,8 @@ input[type="checkbox"]:disabled + label {
 .sorting b {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: -3px;
 	width: 180px;
+	margin-top: -3px;
 }
 
 .sorting ul {
@@ -1404,8 +1477,8 @@ input[type="checkbox"]:disabled + label {
 
 .sorting a {
 	font-size: 14px;
-	line-height: 18px;
 	font-weight: 400;
+	line-height: 18px;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: rgba(0, 0, 0, 0.3);
@@ -1523,10 +1596,10 @@ input[type="checkbox"]:disabled + label {
 .gallery-item .hover {
 	position: absolute;
 	display: none;
-	width: 360px;
 	bottom:10px;
-	padding-top: 26px;
+	width: 360px;
 	min-height: 205px;
+	padding-top: 26px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #000000;
@@ -1550,29 +1623,29 @@ input[type="checkbox"]:disabled + label {
 }
 
 .hover p {
-	width: 240px;
-	margin: 0 auto;
-	text-align: center;
-	color: #666666;
-	overflow: hidden;
 	position: relative;
-	line-height: 1.2em;
+	width: 240px;
 	max-height: 3.6em;
+	margin: 0 auto;
 	margin-right: 3em;
 	padding-right: 1em;
+	text-align: center;
+	line-height: 1.2em;
+	color: #666666;
+	overflow: hidden;
 }
 
 
 /*правило на случай переполнения*/
 .hover p:before {
-	content: '...';
+	content: "...";
 	position: absolute;
 	right: 0;
   	bottom: 0;
 }
 
 .hover p:after {
-	content: '';
+	content: "";
 	position: absolute;
 	right: 0;
 	width: 1em;
@@ -1586,7 +1659,6 @@ input[type="checkbox"]:disabled + label {
 .hover .btn {
 	margin-left: 78px;
 	margin-top: 30px;
-
 	padding: 16px 60px;
 }
 
@@ -1614,10 +1686,10 @@ input[type="checkbox"]:disabled + label {
 .paginator-item {
 	display: inline-block;
 	vertical-align: top;
-	border-radius: 3px;
 	margin-right: 7px; 
-	line-height: 18px;
+	border-radius: 3px;
 	font-weight: 500;
+	line-height: 18px;
 	text-align: center;
 	color: #000000;
 	text-transform: uppercase;
@@ -1655,5 +1727,4 @@ input[type="checkbox"]:disabled + label {
 }
 
 /* end paginator */
-
 

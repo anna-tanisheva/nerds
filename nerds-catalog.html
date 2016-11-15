@@ -5,7 +5,7 @@
 	<title>Магазин готовых шаблонов</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet"  type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -52,7 +52,7 @@
 
 				<!-- LEFT SECTION -->
 				<div class="left-section">
-					<form action="#" method="get">
+					<form action="http://echo.nerdss.ru" method="get">
 						<b class="form-caption">Стоимость:</b>
 						<div class="range-filter">
 							<div class="range-controls">
@@ -134,7 +134,7 @@
 							<div class="gallery-item-wrapper">
 								<img src="img/img-sedona.jpg" alt="sedona"  height="575" width="359">
 								<div class="hover">
-									<h3><a class="item-name" href="#">Sedona</a></h3>
+									<h3><a class="item-name" href="sedona.html">Sedona</a></h3>
 									<p>Информационный сайт для туристов</p>
 									<a class="btn" href="#">9 900 руб.</a>
 								</div>
@@ -144,7 +144,7 @@
 							<div class="gallery-item-wrapper">
 								<img src="img/img-pink.jpg" alt="pink" height="575" width="359">
 								<div class="hover">
-									<h3><a class="item-name" href="#">Pink app</a></h3>
+									<h3><a class="item-name" href="pink.html">Pink app</a></h3>
 									<p>Продуктовый лендинг приложения для iOS и Android</p>
 									<a class="btn" href="#">9 900 руб.</a>
 								</div>
@@ -154,7 +154,7 @@
 							<div class="gallery-item-wrapper">
 								<img src="img/img-barbershop.jpg" alt="barbershop" height="575" width="359">
 								<div class="hover">
-									<h3><a class="item-name" href="http://barbershop.websciurus.com/" target="_blank">Barbershop</a></h3>
+									<h3><a class="item-name" href="barbershop.html" target="_blank">Barbershop</a></h3>
 									<p>Сайт салона красоты. Для мужчин, да.</p>
 									<a class="btn" href="#">9 900 руб.</a>
 								</div>
@@ -164,7 +164,7 @@
 							<div class="gallery-item-wrapper">
 								<img src="img/img-mishka.jpg" alt="mishka" height="575" width="359">
 								<div class="hover">
-									<h3><a class="item-name" href="#">Mishka</a></h3>
+									<h3><a class="item-name" href="mishka.html">Mishka</a></h3>
 									<p>Интернет-магазин вязанных игрушек</p>
 									<a class="btn" href="#">9 900 руб.</a>
 								</div>
@@ -174,7 +174,7 @@
 							<div class="gallery-item-wrapper">
 								<img src="img/img-aplus.jpg" alt="a-plus" height="575" width="359">
 								<div class="hover">
-									<h3><a class="item-name" href="#">A plus</a></h3>
+									<h3><a class="item-name" href="a-plus.html">A plus</a></h3>
 									<p>Лендинг курсов повышения квалификации</p>
 									<a class="btn" href="#">9 900 руб.</a>
 								</div>
@@ -184,7 +184,7 @@
 							<div class="gallery-item-wrapper">
 								<img src="img/img-kvast.jpg" alt="kvast" height="575" width="359">
 								<div class="hover">
-									<h3><a class="item-name" href="#">Кваст</a></h3>
+									<h3><a class="item-name" href="kvast.html">Кваст</a></h3>
 									<p>Промо-сайт производителя крафтового кваса</p>
 									<a class="btn" href="#">9 900 руб.</a>
 								</div>
@@ -216,12 +216,12 @@
 					</div>
 
 					<!-- CONTACTS -->
-					<div class="contacts">
+					<div class="contacts inner">
 						<h3>nёrds design studio</h3>
 						<p>191186, Санкт-Петербург,<br>
 						ул. Б. Конюшенная, д. 19/8 <br></p>
 						<p>тел. +7 (812) 275-75-75</p>
-						<a  class="btn write-us" href="#">Напишите нам</a>
+						<a  class="btn write-us" href="feedback.html">Напишите нам</a>
 					</div>
 					<!-- end contacts -->
 
@@ -233,7 +233,7 @@
 
 	<!-- FOOTER -->
 
-	<footer class="main-footer">
+	<footer class="main-footer inner">
 		<div class="container">
 		
 			<!-- SOCIAL -->
@@ -255,13 +255,13 @@
 
 	<!-- MODAL WINDOW -->
 	<div class="modal-window inner">
-		<form action="#" method="post">
+		<form action="http://echo.nerdss.ru" method="post">
 			<fieldset class="modal-write-us">
 				<legend>Напишите нам</legend>
 				<label for="name-id">
 					Ваше имя:
 				</label>
-				<label for="e-mail-id">
+				<label for="email-id">
 					Ваш e-mail:
 				</label>
 				<input type="text" name="name" id="name-id" placeholder="Представьтесь, пожалуйста">
@@ -277,6 +277,7 @@
 		</form>
 	</div>
 	<!-- end modal window -->
-	
+	<script type="text/javascript" src="js/main-js.min.js"></script>
+
 </body>
 </html>
