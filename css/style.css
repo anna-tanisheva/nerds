@@ -1,27 +1,7 @@
-@font-face {
-	font-family: "RobotoBoldCondensed";
-	src: url("../fonts/Roboto-BoldCondensed.ttf")
-}
-
-@font-face {
-	font-family: "RobotoBlack";
-	src: url("../fonts/Roboto-Black.ttf")
-}
-
-@font-face {
-	font-family: "RobotoBold";
-	src: url("../fonts/Roboto-Bold.ttf")
-}
-
-@font-face {
-	font-family: "RobotoCondensed";
-	src: url("../fonts/Roboto-Condensed.ttf")
-}
-
 body {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
- 	font-weight: 400;
+	font-weight: 400;
 	line-height: 24px;
 	color: #283136;
 	background-color: white;
@@ -46,13 +26,11 @@ img {
 	padding-bottom: 67px;
 }
 
-
 .clearfix {
 	content: "";
 	display: table;
 	clear: both;
 }
-
 
 .container {
 	width: 1160px;
@@ -123,7 +101,6 @@ fieldset {
 	border: 0;
 }
 
-
 /* =========================================================================================================================
 HEADER STYLES
 ========================================================================================================================= */
@@ -147,8 +124,6 @@ HEADER STYLES
 .logo:hover {
 	opacity: 0.8;
 }
-
-
 
 /* NAV-BAR*/
 
@@ -194,8 +169,6 @@ HEADER STYLES
 	border-bottom: 2px solid #fb565a;
 }
 
-
-
 /* CART */
 
 .cart {
@@ -206,26 +179,20 @@ HEADER STYLES
 	padding-left: 40px;
 }
 
-
 .cart::before {
 	content: "";
 	position: absolute;
 	top: 24%;
 	left: 1px;
-    width: 15px;
-    height: 15px;
+	width: 15px;
+	height: 15px;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
-    background-position: -5px -5px;
-    opacity: 0.3;
+	background-position: -5px -5px;
+	opacity: 0.3;
 }
 
-
 /* end-header */
-
-
-
-
 
 /*======================================================================================================================
  MAP STYLES
@@ -284,18 +251,15 @@ HEADER STYLES
 	margin-bottom: 37px;
 }
 
-
 .contacts .btn {
 	padding: 16px 45px;
 }
 
 /* end map*/
 
-
 /* =====================================================================================================================
 FOOTER STYLES
 ======================================================================================================================*/
-
 
 .main-footer {
 	margin: 0 auto;
@@ -339,42 +303,42 @@ FOOTER STYLES
 
 .social-icons a:nth-child(2) {
 	margin-right: 6px;
-    margin-left: 8px;
+	margin-left: 8px;
 }
 
 .social-vk::before {
 	content:"";
 	position: absolute;
-    top: 41%;
-    left: 34%;
+	top: 41%;
+	left: 34%;
 	width: 26px;
-    height: 15px;
-    background-position: -5px -305px;
-    background-image: url("../img/spritesheet.png");
+	height: 15px;
+	background-position: -5px -305px;
+	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 }
 
 .social-fb::before {
 	content:"";
 	position: absolute;
-    top: 36%;
-    left: 43%;
+	top: 36%;
+	left: 43%;
 	width: 12px;
-    height: 22px;
-    background-position: -5px -127px;
-    background-image: url("../img/spritesheet.png");
+	height: 22px;
+	background-position: -5px -127px;
+	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 }
 
 .social-insta::before {
 	content:"";
 	position: absolute;
-    top: 37%;
-    left: 37%;
+	top: 37%;
+	left: 37%;
 	width: 21px;
-    height: 21px;
-    background-position: -5px -159px;
-    background-image: url("../img/spritesheet.png");
+	height: 21px;
+	background-position: -5px -159px;
+	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 }
 
@@ -407,15 +371,13 @@ FOOTER STYLES
 
 /* end footer */
 
-
-
 /*======================================================================================================================
 MODAL-WINDOW
 ======================================================================================================================*/
 
 .modal-window {
 	position: absolute;
-	top: 168%;
+	top: -137px;
 	left: 50%;
 	z-index: 100;
 	display: none;
@@ -428,17 +390,16 @@ MODAL-WINDOW
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
-
 @-webkit-keyframes popup {
 	0% {
 		opacity: 0;
 		-webkit-transform: rotate(-10deg);
-		        transform: rotate(-10deg);
+				transform: rotate(-10deg);
 	}
 	
 	70% {
 		-webkit-transform: rotate(5deg);
-		        transform: rotate(5deg);
+				transform: rotate(5deg);
 	}
 
 	100% {
@@ -450,12 +411,12 @@ MODAL-WINDOW
 	0% {
 		opacity: 0;
 		-webkit-transform: rotate(-10deg);
-		        transform: rotate(-10deg);
+				transform: rotate(-10deg);
 	}
 	
 	70% {
 		-webkit-transform: rotate(5deg);
-		        transform: rotate(5deg);
+				transform: rotate(5deg);
 	}
 
 	100% {
@@ -466,8 +427,7 @@ MODAL-WINDOW
 .modal-window-show {
 	display: block;
 	-webkit-animation: popup 1s;
-	        animation: popup 1s;
-
+			animation: popup 1s;
 }
 
 .modal-window .input-error {
@@ -478,10 +438,6 @@ MODAL-WINDOW
 	color: #e74246;
 }
 
-
-.modal-window.inner {
-	top: 2400px;
-}
 
 .close {
 	position: absolute;
@@ -508,12 +464,12 @@ MODAL-WINDOW
 
 .close::before {
 	-webkit-transform: rotate(45deg);
-	        transform: rotate(45deg);
+			transform: rotate(45deg);
 }
 
 .close::after {
 	-webkit-transform: rotate(-45deg);
-	        transform: rotate(-45deg);
+			transform: rotate(-45deg);
 }
 
 .close:hover::before,
@@ -526,15 +482,18 @@ MODAL-WINDOW
 	background-color: #ffeeee;
 }
 
-.modal-window form {
+.modal-window form,
+.modal-window legend,
+.modal-window fieldset,
+.modal-window label,
+.modal-window p,
+.modal-window input {
 	margin: 0;
 	padding: 0;
 }
 
 .modal-window legend {
-	margin: 0;
 	margin-bottom: 41px;
-	padding: 0;
 	font-size: 45px;
 	font-weight: 400;
 	line-height: 45px;
@@ -543,8 +502,6 @@ MODAL-WINDOW
 .modal-window fieldset {
 	display: block;
 	width: 760px;
-	margin: 0;
-	padding: 0;
 	border: 0;
 
 }
@@ -553,33 +510,25 @@ MODAL-WINDOW
 	display: inline-block;
 	vertical-align: top;
 	width: 360px;
-	margin: 0;
-	margin-bottom:11px;
-	padding: 0;
+	margin-bottom: 11px;
 	padding-right: 36px;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 18px;
 }
 
-
 .modal-write-us label:nth-child(3) {
 	padding-right: 0;
 }
 
-
 .modal-window p {
-	margin: 0;
 	margin-bottom: 10px;
-	padding: 0;
 }
 
 .modal-window input {
 	width: 343px;
 	min-height: 44px;
-	margin: 0;
 	margin-bottom: 35px;
-	padding: 0;
 	padding-left: 13px;
 	border: 2px solid #d7dcde;
 	border-radius: 5px;
@@ -587,31 +536,20 @@ MODAL-WINDOW
 	font-weight: 500;
 }
 
-
-
 .modal-window input[type="email"] {
 	margin-left: 37px;
 }
 
-
 /* переопределение цвета текста в placeholder */
-.modal-window input::-webkit-input-placeholder {
-	color: #444444;
-	opacity: 0.5;
-}
 
-
-.modal-window input::-moz-placeholder {
-	color: #444444;
-	opacity: 0.5;
-}
+.modal-window input::-webkit-input-placeholder,
+.modal-window input::-moz-placeholder,
 .modal-window input:-moz-placeholder {
 	color: #444444;
 	opacity: 0.5;
 }
 
 /* ================================ */
-
 
 .modal-window input:hover {
 	border-color: #b4b9bb;
@@ -626,12 +564,8 @@ MODAL-WINDOW
 	outline: 0;
 }
 
-
-.modal-window .textarea {
-	display: block;
-}
-
 .modal-window textarea {
+	display: block;
 	margin-bottom: 34px;
 	padding: 11px 14px;
 	border: 2px solid #d7dcde;
@@ -640,23 +574,16 @@ MODAL-WINDOW
 	resize: none;
 }
 
-
 /* переопределение цвета текста в placeholder */
-.modal-window textarea::-webkit-input-placeholder {
-	color: #444444;
-	opacity: 0.5;
-}
 
+.modal-window textarea::-webkit-input-placeholder,
+.modal-window textarea::-moz-placeholder,
 .modal-window textarea::-moz-placeholder {
 	color: #444444;
 	opacity: 0.5;
 }
-.modal-window textarea:-moz-placeholder {
-	color: #444444;
-	opacity: 0.5;
-}
-/* ================================ */
 
+/* ================================ */
 
 .modal-window textarea:hover {
 	border-color: #b4b9bb;
@@ -671,8 +598,6 @@ MODAL-WINDOW
 	outline: 0;
 }
 
-
-
 /* MODAL-WINDOW BTN */
 
 .modal-window .btn {
@@ -682,14 +607,11 @@ MODAL-WINDOW
 	font-weight: 500;
 }
 
-
-
 /* INDEX.HTML */
 
 /*======================================================================================================================
 SLIDER
 ======================================================================================================================*/
-
 
 .slider {
 	margin: 0 auto;
@@ -708,6 +630,7 @@ SLIDER
 	position: absolute;
 	opacity: 0;
 }
+
 .slider-controls {
 	position: absolute;
 	bottom: 98px;
@@ -755,43 +678,21 @@ SLIDER
 .slide-text p {
 	position: relative;
 	width: 410px;
-	max-height: 3.6em;
 	margin: 0;
 	margin-top: 26px;
 	margin-bottom: 40px;
-	margin-right: 3em;
-	padding-right: 2em;
-	overflow: hidden;
-	line-height: 1.5em;
+	line-height: 24px;
+	overflow: hidden; 
+	display: -webkit-box; 
+	-webkit-line-clamp: 2; 
+	-webkit-box-orient: vertical; 
 }
-
-
-/*правило на случай переполнения*/
-.slide-text p::before {
-	content: "...";
-	position: absolute;
-	right: 13px;
-  	bottom: 0;
-}
-
-.slide-text p::after {
-	content: "";
-	position: absolute;
-	right: 13px;
-	width: 1em;
-	height: 1em;
-	margin-top: 0.2em;
-	background: #eeeeee;
-}
-/*================================*/
-
-
 
 .slide-title {
 	display: block;
 	width: 532px;
-	font-family: "RobotoBold", Arial, sans-serif;
 	font-size: 55px;
+	font-weight: bold;
 	line-height: 55px;
 	color: #000000;
 
@@ -822,23 +723,16 @@ SLIDER
 .slide {
 	display: none;
 }
-#btn-1:checked ~ .slides .slide:nth-child(1) {
-	display: block;
-}
 
-#btn-2:checked ~ .slides .slide:nth-child(2) {
-	display: block;
-}
-
+#btn-1:checked ~ .slides .slide:nth-child(1),
+#btn-2:checked ~ .slides .slide:nth-child(2),
 #btn-3:checked ~ .slides .slide:nth-child(3) {
 	display: block;
 }
+
 /* end slider */
 
-
-
 /* FEATURES */
-
 
 .features {
 	border-bottom: 2px solid #eeeeee;
@@ -854,7 +748,7 @@ SLIDER
 	margin-bottom: 75px;
 }
 
-.features-item:last-child {
+.features-item:nth-child(3n) {
 	margin-right: 0;
 }
 
@@ -900,7 +794,6 @@ SLIDER
 	padding: 16px 40px;
 }
 
-
 .apps .btn {
 	background-color: #00ca74;
 }
@@ -908,6 +801,7 @@ SLIDER
 .apps .btn:hover {
 	background-color: #00bc6c;
 }
+
 .apps .btn:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #00aa62;
@@ -928,12 +822,9 @@ SLIDER
 	box-shadow: inset 0 3px rgba(193, 49, 53, 0.1);
 }
 
-
 /* end features */
 
-
 /* ABOUT */
-
 
 .about {
 	min-height: 486px;
@@ -954,21 +845,16 @@ SLIDER
 	font-size: 16px;
 }
 
-
 .lead {
 	width: 686px;
 	margin-top: 34px;
 	margin-bottom: 34px;
-}
-
-.lead b {
-	font-family: "RobotoBold", Arial, sans-serif;
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: 700;
+	letter-spacing: 0.3px;
+	font-weight: bold;
 	color: #000000;
 }
-
 
 .about-left .text {
 	width: 622px;
@@ -984,6 +870,7 @@ SLIDER
 	padding: 0;
 	padding-left: 37px;
 }
+
 .service li {
 	position: relative;
 	display: block;
@@ -991,21 +878,19 @@ SLIDER
 	list-style: none;
 }
 
-
 .service li::before {
 	content: "";
 	position: absolute;
 	top: 12px;
 	left: -5%;
-    width: 25px;
-    height: 2px;
+	width: 25px;
+	height: 2px;
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
-    background-position: -5px -260px;
+	background-position: -5px -260px;
 }
 
 /* end about-left */
-
 
 /* ABOUT RIGHT */
 
@@ -1061,7 +946,6 @@ SLIDER
 	font-weight: 700;
 }
 
-
 /* end about */
 
 /* RECENT-WORKS */
@@ -1074,25 +958,6 @@ SLIDER
 	border-bottom: 2px solid #eeeeee;
 }
 
-.recent-works img[alt="html-academy"] {
-	width: 199px;
-	height: 68px;
-}
-
-.recent-works img[alt="borodinski"] {
-	width: 210px;
-	height: 90px;
-}
-
-.recent-works img[alt="pink"] {
-	width: 185px;
-	height: 52px;
-}
-
-.recent-works img[alt="mishka"] {
-	width: 173px;
-	height: 84px;
-}
 .recent-works a {
 	display: inline-block;
 	vertical-align: middle;
@@ -1113,17 +978,18 @@ SLIDER
 .recent-works a:active {
 	opacity: 0.1;
 }
+
 .vertical-line {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
 	width: 260px;
+}
 
-/* 	outline: 1px solid black;
- */}
 .vertical-line:not(:nth-child(4n)) {
 	margin-right: 40px;
 }
+
 .vertical-line:not(:first-child)::after {
 	content: "";
 	position: absolute;
@@ -1139,16 +1005,9 @@ SLIDER
 	top: -4px;
 }
 
-.recent-works a:hover::after,
-.recent-works a:active::after {
-	border: 1px solid #eeeeee;
-}
 /* end recent-works */
 
-
-
 /* CATALOG.HTML */
-
 
 .catalog-item {
 	min-height: 164px;
@@ -1161,7 +1020,6 @@ SLIDER
 	text-align: center;
 }
 
-
 /*======================================================================================================================
  LEFT SECTION STYLES
 ======================================================================================================================*/
@@ -1171,6 +1029,7 @@ SLIDER
 	vertical-align: top;
 	width: 280px;
 	min-height: 773px;
+	font-size: 0;
 }
 
 .form-caption {
@@ -1179,9 +1038,7 @@ SLIDER
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #000000;
-
 }
-
 
 .left-section legend {
 	margin-bottom: 16px;
@@ -1196,7 +1053,7 @@ SLIDER
 
 .range-filter {
 	width: 260px;
-	margin-top: 48px;
+	margin-top: 44px;
 	margin-bottom: 108px;
 }
 
@@ -1211,7 +1068,7 @@ SLIDER
 }
 
 .range-controls .scale {
-	margin-top: 39px;
+	margin-top: 40px;
 	height: 2px;
 	background: #d7dcde;
 }
@@ -1242,15 +1099,13 @@ SLIDER
 	left: 160px;
 }
 
-
 .price-controls input {
 	width: 60px;
-	margin-left: 10px;
+	margin-left: 8px;
 	padding: 10px 10px;
 	border: none;
 	border-radius: 5px;
 	font-size: 16px;
-	font-family: "Roboto", Arial, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	text-align: center;
@@ -1261,6 +1116,7 @@ SLIDER
 
 .price-controls {
 	position: relative;
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 22px;
@@ -1277,11 +1133,10 @@ SLIDER
 }
 
 .max-price {
-	right: -2px;
+	right: -1px;
 }
 
 /* end range-filter */
-
 
 /* RADIO*/
 
@@ -1297,32 +1152,23 @@ input[type="radio"] + label {
 }
 
 
-input[type="radio"] + label::before {
+input[type="radio"] + label::before,
+input[type="radio"]:checked + label::before {
 	content:"";
 	position: absolute;
-    top: -3px;
-    left: 1px;
-    display: block;
+	top: -3px;
+	left: 1px;
+	display: block;
 	width: 25px;
-    height: 25px;
-    background-position: -5px -190px;
-    background-image: url("../img/spritesheet.png");
+	height: 25px;
+	background-position: -5px -190px;
+	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 	opacity: 0.4;
 }
 
 input[type="radio"]:checked + label::before  {
-	content:"";
-	position: absolute;
-    top: -3px;
-    left: 1px;
-    display: block; 
-	width: 25px;
-    height: 25px;
-    background-position: -5px -225px;
-    background-image: url("../img/spritesheet.png");
-	background-repeat: no-repeat;
-	opacity: 0.4;
+	background-position: -5px -225px;
 }
 
 .left-section label:hover {
@@ -1356,32 +1202,23 @@ input[type="checkbox"] + label {
 	display: none;
 }
 
-input[type="checkbox"] + label::before {
+input[type="checkbox"] + label::before,
+input[type="checkbox"]:checked + label::before {
 	content:"";
 	position: absolute;
-    left: 1px; 
-    top: -2px;
-    display: block;
+	left: 1px; 
+	top: -2px;
+	display: block;
 	width: 23px;
-    height: 23px;
-    background-position: -5px -30px;
-    background-image: url("../img/spritesheet.png");
+	height: 23px;
+	background-position: -5px -30px;
+	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 	opacity: 0.4;
 }
 
 input[type="checkbox"]:checked + label::before  {
-	content:"";
-	position: absolute;
-    left: 1px;
-    top: -2px;
-    display: block;
-    width: 27px;
-    height: 23px;
-    background-position: -5px -63px;
-    background-image: url("../img/spritesheet.png");
-	background-repeat: no-repeat;
-	opacity: 0.4;
+	background-position: -5px -63px;
 }
 
 input[type="checkbox"] + label:hover::before {
@@ -1401,7 +1238,7 @@ input[type="checkbox"]:disabled + label {
 /* BUTTON */
 
 .left-section .button {
-	padding: 16px 89px; 
+	padding: 16px 88px; 
 	border: 0;
 	color: #000000;
 	background-color: #eeeeee;
@@ -1420,8 +1257,6 @@ input[type="checkbox"]:disabled + label {
 
 /* end button */
 
-
-
 /*======================================================================================================================
  RIGHT SECTION STYLES
 ======================================================================================================================*/
@@ -1437,7 +1272,6 @@ input[type="checkbox"]:disabled + label {
 .right-section b {
 	line-height: 18px;
 }
-
 
 /* SORTING */
 
@@ -1463,7 +1297,6 @@ input[type="checkbox"]:disabled + label {
 	padding: 0;
 	list-style: none;
 }
-
 
 .sorting li {
 	display: inline-block;
@@ -1520,7 +1353,7 @@ input[type="checkbox"]:disabled + label {
 
 .sort-arrows a:last-child {
 	-webkit-transform: rotate(180deg);
-	        transform: rotate(180deg);
+			transform: rotate(180deg);
 	margin-left: 18px;
 	margin-top: -5px;
 }
@@ -1534,7 +1367,6 @@ input[type="checkbox"]:disabled + label {
 }
 
 /* end sorting */
-
 
 /* GALLERY */
 
@@ -1550,8 +1382,6 @@ input[type="checkbox"]:disabled + label {
 	margin-left: 0;
 }
 
-
-
 .gallery-item {
 	position: relative;
 	margin-bottom: 26px;
@@ -1561,36 +1391,29 @@ input[type="checkbox"]:disabled + label {
 }
 
 .gallery-item::after,
-.gallery-item::before {
-	content: "";
-	position: absolute;
-	display: block;
-	height: 14px;
-	width: 14px;
-	background-color: #ffffff;
-	border-radius: 50%;
-}
-
+.gallery-item::before,
 .gallery-item-wrapper::after {
 	content: "";
 	position: absolute;
 	display: block;
 	height: 14px;
 	width: 14px;
-	top: -27px;
-	left: 63px;
 	background-color: #ffffff;
 	border-radius: 50%;
+}
+
+.gallery-item::after {
+	top: -27px;
+	left: 17px;
 }
 
 .gallery-item::before{
 	top: -27px;
 	left: 40px;
 }
-
-.gallery-item::after {
+.gallery-item-wrapper::after {
 	top: -27px;
-	left: 17px;
+	left: 63px;
 }
 
 .gallery-item .hover {
@@ -1612,9 +1435,11 @@ input[type="checkbox"]:disabled + label {
 	margin-bottom: 16px;
 	text-align: center;
 }
+
 .gallery-item-wrapper img {
 	width: 359px;
 	height: 575px;
+	background-color: #eeeeee;
 }
 
 .hover .item-name {
@@ -1635,13 +1460,13 @@ input[type="checkbox"]:disabled + label {
 	overflow: hidden;
 }
 
-
 /*правило на случай переполнения*/
+
 .hover p:before {
 	content: "...";
 	position: absolute;
 	right: 0;
-  	bottom: 0;
+	bottom: 0;
 }
 
 .hover p:after {
@@ -1653,8 +1478,8 @@ input[type="checkbox"]:disabled + label {
 	margin-top: 0.2em;
 	background: #eeeeee;
 }
-/*================================*/
 
+/*================================*/
 
 .hover .btn {
 	margin-left: 78px;
@@ -1670,9 +1495,7 @@ input[type="checkbox"]:disabled + label {
 	border-top: 40px solid #4d4d4d;
 }
 
-
 /* end gallery */
-
 
 /* PAGINATOR */
 
@@ -1681,7 +1504,6 @@ input[type="checkbox"]:disabled + label {
 	margin-left: 400px;
 	margin-bottom: 60px;
 }
-
 
 .paginator-item {
 	display: inline-block;
@@ -1716,7 +1538,6 @@ input[type="checkbox"]:disabled + label {
 	background-color: #d5d5d5;
 	box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
 }
-
 
 .paginator span {
 	min-width: 44px;

@@ -224,8 +224,31 @@
 						<a  class="btn write-us" href="feedback.html">Напишите нам</a>
 					</div>
 					<!-- end contacts -->
-
 				</div>
+				<!-- MODAL WINDOW -->
+				<div class="modal-window inner">
+					<form action="http://echo.nerdss.ru" method="post">
+						<fieldset class="modal-write-us">
+							<legend>Напишите нам</legend>
+							<label for="name-id">
+								Ваше имя:
+							</label>
+							<label for="email-id">
+								Ваш e-mail:
+							</label>
+							<input type="text" name="name" id="name-id" placeholder="Представьтесь, пожалуйста">
+							
+							<input type="email" name="e-mail" id="email-id" placeholder="Для отправки ответа">
+							<label class="textarea" for="message-id">
+								Текст письма:
+							</label>
+							<textarea rows="5" cols="89" name="message" id="message-id" placeholder="В свободной форме"></textarea>
+							<button class="btn">Отправить</button>
+							<button class="close" type="button" title="Закрыть">Закрыть</button>
+						</fieldset>
+					</form>
+				</div>
+	<!-- end modal window -->
 			</div>
 		</div>
 	</main>
@@ -249,34 +272,10 @@
 				</div>
 			</div>
 			<!-- end social -->
-
 		</div>
 	</footer>
 
-	<!-- MODAL WINDOW -->
-	<div class="modal-window inner">
-		<form action="http://echo.nerdss.ru" method="post">
-			<fieldset class="modal-write-us">
-				<legend>Напишите нам</legend>
-				<label for="name-id">
-					Ваше имя:
-				</label>
-				<label for="email-id">
-					Ваш e-mail:
-				</label>
-				<input type="text" name="name" id="name-id" placeholder="Представьтесь, пожалуйста">
-				
-				<input type="email" name="e-mail" id="email-id" placeholder="Для отправки ответа">
-				<label class="textarea" for="message-id">
-					Текст письма:
-				</label>
-				<textarea rows="5" cols="89" name="message" id="message-id" placeholder="В свободной форме"></textarea>
-				<button class="btn">Отправить</button>
-				<button class="close" type="button" title="Закрыть">Закрыть</button>
-			</fieldset>
-		</form>
-	</div>
-	<!-- end modal window -->
+
 	<script type="text/javascript" src="js/main-js.min.js"></script>
 
 </body>
