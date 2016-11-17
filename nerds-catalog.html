@@ -49,8 +49,8 @@
 		<div class="content">
 			<div class="container">
 
-
 				<!-- LEFT SECTION -->
+
 				<div class="left-section">
 					<form action="http://echo.nerdss.ru" method="get">
 						<b class="form-caption">Стоимость:</b>
@@ -68,7 +68,6 @@
 								<label class="max-price price">до <input name="max-price" type="text" value="15000"></label>
 							</div>
 						</div>
-
 						<fieldset class="grid">
 							<legend class="form-caption">Сетка: </legend>
 							<input type="radio" id="adaptive-id" value="adaptive" name="grid" checked>
@@ -86,7 +85,7 @@
 						</fieldset>
 						<fieldset class="features-form">
 							<legend class="form-caption">Особенности:</legend>
-							<input type="checkbox" id="slider-id" name="slider" checked disabled>
+							<input type="checkbox" id="slider-id" name="slider" checked>
 							<label for="slider-id">
 								Слайдер
 							</label>
@@ -98,7 +97,7 @@
 							<label for="news-id">
 								Новости
 							</label>
-							<input type="checkbox" id="gallery-id" name="gallery" disabled>
+							<input type="checkbox" id="gallery-id" name="gallery">
 							<label for="gallery-id">
 								Галерея
 							</label>
@@ -110,112 +109,113 @@
 						<button class="button btn" type="submit">Показать</button>
 					</form>
 				</div>
+
 				<!-- end left section -->
 
 				<!-- RIGHT SECTION -->
+
 				<div class="right-section">
 					<div class="sorting">
 						<b class="form-caption">Cортировать:</b>
 						<ul>
-							<li><a href="#">По цене</a></li>
-							<li><a href="#">По типу</a></li>
-							<li><a href="#">По названию</a></li>
+							<li>
+								<a class="active" href="#">По цене</a>
+							</li>
+							<li>
+								<a href="#">По типу</a>
+							</li>
+							<li>
+								<a href="#">По названию</a>
+							</li>
 						</ul>
 						<div class="sort-arrows">
-							<a href="#">Убывание</a>
+							<a class="active" href="#">Убывание</a>
 							<a href="#">Возростание</a>
 						</div>
 					</div>
-					<!-- end sorting -->
 
+					<!-- end sorting -->
 
 					<div class="gallery">
 						<article class="gallery-item">
-							<div class="gallery-item-wrapper">
-								<img src="img/img-sedona.jpg" alt="sedona"  height="575" width="359">
-								<div class="hover">
-									<h3><a class="item-name" href="sedona.html">Sedona</a></h3>
-									<p>Информационный сайт для туристов</p>
-									<a class="btn" href="#">9 900 руб.</a>
-								</div>
+							<img src="img/img-sedona.jpg" alt="sedona"  height="575" width="359">
+							<div class="hover">
+								<h3><a class="item-name" href="sedona.html">Sedona</a></h3>
+								<p>Информационный сайт для туристов</p>
+								<a class="btn" href="#">9 900 руб.</a>
 							</div>
 						</article>
 						<article class="gallery-item">
-							<div class="gallery-item-wrapper">
-								<img src="img/img-pink.jpg" alt="pink" height="575" width="359">
-								<div class="hover">
-									<h3><a class="item-name" href="pink.html">Pink app</a></h3>
-									<p>Продуктовый лендинг приложения для iOS и Android</p>
-									<a class="btn" href="#">9 900 руб.</a>
-								</div>
+							<img src="img/img-pink.jpg" alt="pink" height="575" width="359">
+							<div class="hover">
+								<h3><a class="item-name" href="pink.html">Pink app</a></h3>
+								<p>Продуктовый лендинг приложения для iOS и Android</p>
+								<a class="btn" href="#">9 900 руб.</a>
 							</div>
 						</article>
 						<article class="gallery-item">
-							<div class="gallery-item-wrapper">
-								<img src="img/img-barbershop.jpg" alt="barbershop" height="575" width="359">
-								<div class="hover">
-									<h3><a class="item-name" href="barbershop.html" target="_blank">Barbershop</a></h3>
-									<p>Сайт салона красоты. Для мужчин, да.</p>
-									<a class="btn" href="#">9 900 руб.</a>
-								</div>
+							<img src="img/img-barbershop.jpg" alt="barbershop" height="575" width="359">
+							<div class="hover">
+								<h3><a class="item-name" href="barbershop.html" target="_blank">Barbershop</a></h3>
+								<p>Сайт салона красоты. Для мужчин, да.</p>
+								<a class="btn" href="#">9 900 руб.</a>
 							</div>
 						</article>
 						<article class="gallery-item">
-							<div class="gallery-item-wrapper">
-								<img src="img/img-mishka.jpg" alt="mishka" height="575" width="359">
-								<div class="hover">
-									<h3><a class="item-name" href="mishka.html">Mishka</a></h3>
-									<p>Интернет-магазин вязанных игрушек</p>
-									<a class="btn" href="#">9 900 руб.</a>
-								</div>
+							<img src="img/img-mishka.jpg" alt="mishka" height="575" width="359">
+							<div class="hover">
+								<h3><a class="item-name" href="mishka.html">Mishka</a></h3>
+								<p>Интернет-магазин вязанных игрушек</p>
+								<a class="btn" href="#">9 900 руб.</a>
 							</div>
 						</article>
-						<article class="gallery-item">
-							<div class="gallery-item-wrapper">
-								<img src="img/img-aplus.jpg" alt="a-plus" height="575" width="359">
-								<div class="hover">
-									<h3><a class="item-name" href="a-plus.html">A plus</a></h3>
-									<p>Лендинг курсов повышения квалификации</p>
-									<a class="btn" href="#">9 900 руб.</a>
-								</div>
+						<article class="gallery-item">					
+							<img src="img/img-aplus.jpg" alt="a-plus" height="575" width="359">
+							<div class="hover">
+								<h3><a class="item-name" href="a-plus.html">A plus</a></h3>
+								<p>Лендинг курсов повышения квалификации</p>
+								<a class="btn" href="#">9 900 руб.</a>
 							</div>
 						</article>
-						<article class="gallery-item">
-							<div class="gallery-item-wrapper">
-								<img src="img/img-kvast.jpg" alt="kvast" height="575" width="359">
-								<div class="hover">
-									<h3><a class="item-name" href="kvast.html">Кваст</a></h3>
-									<p>Промо-сайт производителя крафтового кваса</p>
-									<a class="btn" href="#">9 900 руб.</a>
-								</div>
+						<article class="gallery-item">							
+							<img src="img/img-kvast.jpg" alt="kvast" height="575" width="359">
+							<div class="hover">
+								<h3><a class="item-name" href="kvast.html">Кваст</a></h3>
+								<p>Промо-сайт производителя крафтового кваса</p>
+								<a class="btn" href="#">9 900 руб.</a>
 							</div>
 						</article>
 					</div>
+
 					<!-- end gallery -->
 
 				</div>
+
 				<!-- end right section -->
 
 				<!-- PAGINATOR -->
+
 				<div class="paginator">
-					
-					<span class="paginator-item active">1</span>
+					<a class="paginator-item active">1</a>
 					<a class="paginator-item button" href="#">2</a>
 					<a class="paginator-item button" href="#">3</a>
 					<a class="paginator-item button btn" href="#">Следующая</a>
-					
 				</div>
+
 				<!-- end paginator -->
+
 			</div>
 
 			<!-- MAP -->
+
 			<div id="map" class="map">
+				<div class="google-map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651563!2d30.32089461639426!3d59.9387941818763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1478867918398" width="100%" height="413" frameborder="0" style="border:0"></iframe>
+				</div>
 				<div class="container">
-					<div class="google-map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651563!2d30.32089461639426!3d59.9387941818763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1478867918398" width="100%" height="413" frameborder="0" style="border:0"></iframe>
-					</div>
 
 					<!-- CONTACTS -->
+
 					<div class="contacts inner">
 						<h3>nёrds design studio</h3>
 						<p>191186, Санкт-Петербург,<br>
@@ -223,9 +223,13 @@
 						<p>тел. +7 (812) 275-75-75</p>
 						<a  class="btn write-us" href="feedback.html">Напишите нам</a>
 					</div>
+
 					<!-- end contacts -->
+
 				</div>
+
 				<!-- MODAL WINDOW -->
+
 				<div class="modal-window inner">
 					<form action="http://echo.nerdss.ru" method="post">
 						<fieldset class="modal-write-us">
@@ -237,7 +241,6 @@
 								Ваш e-mail:
 							</label>
 							<input type="text" name="name" id="name-id" placeholder="Представьтесь, пожалуйста">
-							
 							<input type="email" name="e-mail" id="email-id" placeholder="Для отправки ответа">
 							<label class="textarea" for="message-id">
 								Текст письма:
@@ -248,11 +251,12 @@
 						</fieldset>
 					</form>
 				</div>
-	<!-- end modal window -->
+
+				<!-- end modal window -->
+
 			</div>
 		</div>
 	</main>
-
 
 	<!-- FOOTER -->
 
@@ -260,6 +264,7 @@
 		<div class="container">
 		
 			<!-- SOCIAL -->
+
 			<div class="social">
 				<div class="social-icons">
 					<a class="social-vk" href="https://vk.com/" target="_blank">Вконтакте</a>
@@ -271,10 +276,11 @@
 					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</div>
+
 			<!-- end social -->
+
 		</div>
 	</footer>
-
 
 	<script type="text/javascript" src="js/main-js.min.js"></script>
 

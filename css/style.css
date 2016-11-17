@@ -61,7 +61,6 @@ img {
 	box-shadow: inset 0 3px rgba(193, 49, 53, 1);
 }
 
-
 h1 {
 	margin: 0;
 	font-size: 55px;
@@ -83,7 +82,6 @@ h3 {
 	font-weight: 700;
 	line-height: 30px;
 	text-transform: uppercase;
-
 }
 
 h4 {
@@ -131,7 +129,6 @@ HEADER STYLES
 	float: left;
 	width: 800px;
 	padding-left: 180px;
-
 }
 
 .nav-bar ul {
@@ -200,7 +197,6 @@ HEADER STYLES
 
 .map {
 	position: relative;
-	width: 1200px;
 	min-height: 362px;
 	margin: 0 auto;
 	padding-top: 52px;
@@ -229,8 +225,7 @@ HEADER STYLES
 }
 
 .contacts.inner{
-	padding-top: 50px;
-
+	padding-top: 53px;
 }
 
 .contacts h3 {
@@ -252,7 +247,7 @@ HEADER STYLES
 }
 
 .contacts .btn {
-	padding: 16px 45px;
+	padding: 16px 44px;
 }
 
 /* end map*/
@@ -267,7 +262,7 @@ FOOTER STYLES
 }
 
 .main-footer.inner {
-	padding-top: 69px;	
+	padding-top: 73px;	
 }
 
 .social {
@@ -285,8 +280,8 @@ FOOTER STYLES
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
-	height: 80px;
-	width: 80px;
+	height: 79px;
+	width: 79px;
 	border-radius: 50%;
 	font-size: 0;
 	background-color: #e1e1e1;
@@ -302,7 +297,7 @@ FOOTER STYLES
 }
 
 .social-icons a:nth-child(2) {
-	margin-right: 6px;
+	margin-right: 7px;
 	margin-left: 8px;
 }
 
@@ -438,7 +433,6 @@ MODAL-WINDOW
 	color: #e74246;
 }
 
-
 .close {
 	position: absolute;
 	top: 78px;
@@ -503,7 +497,6 @@ MODAL-WINDOW
 	display: block;
 	width: 760px;
 	border: 0;
-
 }
 
 .modal-window label {
@@ -679,7 +672,7 @@ SLIDER
 	position: relative;
 	width: 410px;
 	margin: 0;
-	margin-top: 26px;
+	margin-top: 21px;
 	margin-bottom: 40px;
 	line-height: 24px;
 	overflow: hidden; 
@@ -691,11 +684,15 @@ SLIDER
 .slide-title {
 	display: block;
 	width: 532px;
+	min-height: 115px;
 	font-size: 55px;
 	font-weight: bold;
 	line-height: 55px;
 	color: #000000;
-
+	overflow: hidden; 
+	display: -webkit-box; 
+	-webkit-line-clamp: 2; 
+	-webkit-box-orient: vertical;
 }
 
 .slide .btn {
@@ -771,6 +768,7 @@ SLIDER
 }
 
 .features h2 {
+	width:260px;
 	margin-top: 25px;
 	margin-bottom: 16px;
 	text-transform: uppercase;
@@ -833,7 +831,6 @@ SLIDER
 	border-bottom: 2px solid #eeeeee;
 	font-size: 0;
 }
-
 
 /* ABOUT LEFT */
 
@@ -925,14 +922,12 @@ SLIDER
 }
 
 .guaranty .text {
-	display: block;
 	margin-top: 18px;
 	font-size: 16px;
 	line-height: 18px;
 }
 
 .percent {
-	display: block;
 	min-height: 40px;
 	font-size: 45px;
 	font-weight: 700;
@@ -959,35 +954,28 @@ SLIDER
 }
 
 .recent-works a {
+	position: relative;
 	display: inline-block;
 	vertical-align: middle;
 	width: 260px;
 	margin-right: 40px;
 	text-align: center;
-	opacity: 0.2;
 }
 
 .recent-works a:nth-child(4n) {
 	margin-right: 0;
 }
 
-.recent-works a:hover {
+.recent-works img {
+	opacity: 0.2;
+}
+
+.recent-works img:hover {
 	opacity: 1;
 }
 
-.recent-works a:active {
+.recent-works img:active {
 	opacity: 0.1;
-}
-
-.vertical-line {
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-	width: 260px;
-}
-
-.vertical-line:not(:nth-child(4n)) {
-	margin-right: 40px;
 }
 
 .vertical-line:not(:first-child)::after {
@@ -998,7 +986,7 @@ SLIDER
 	display: block;
 	width: 0px;
 	height: 52px;
-	border: 1px solid #eeeeee;
+	border: 1px solid rgba(238, 238, 238, 1);
 }
 
 .vertical-line:nth-child(3)::after {
@@ -1150,7 +1138,6 @@ input[type="radio"] + label {
 .grid input {
 	display: none;
 }
-
 
 input[type="radio"] + label::before,
 input[type="radio"]:checked + label::before {
@@ -1321,10 +1308,6 @@ input[type="checkbox"]:disabled + label {
 	color: rgba(0, 0, 0, 0.6);	
 }
 
-.sorting a:active {
-	color: rgba(0, 0, 0, 1.0);	
-}
-
 .sort-arrows {
 	display: inline-block;
 	vertical-align: top;
@@ -1362,7 +1345,11 @@ input[type="checkbox"]:disabled + label {
 	border-top-color: rgba(0, 0, 0, 0.4);
 }
 
-.sort-arrows a:focus {
+.sorting .active {
+	color: rgba(0, 0, 0, 1);	
+}
+
+.sort-arrows .active {
 	border-top-color: rgba(0, 0, 0, 1);
 }
 
@@ -1391,8 +1378,7 @@ input[type="checkbox"]:disabled + label {
 }
 
 .gallery-item::after,
-.gallery-item::before,
-.gallery-item-wrapper::after {
+.gallery-item::before {
 	content: "";
 	position: absolute;
 	display: block;
@@ -1403,17 +1389,17 @@ input[type="checkbox"]:disabled + label {
 }
 
 .gallery-item::after {
-	top: -27px;
-	left: 17px;
+	box-shadow: 45px 0 0 0 #ffffff;
+}
+
+.gallery-item::after {
+	top: -28px;
+	left: 15px;
 }
 
 .gallery-item::before{
-	top: -27px;
-	left: 40px;
-}
-.gallery-item-wrapper::after {
-	top: -27px;
-	left: 63px;
+	top: -28px;
+	left: 38px;
 }
 
 .gallery-item .hover {
@@ -1539,7 +1525,7 @@ input[type="checkbox"]:disabled + label {
 	box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
 }
 
-.paginator span {
+.paginator .active {
 	min-width: 44px;
 	min-height: 30px;
 	padding-top: 14px;
@@ -1548,4 +1534,3 @@ input[type="checkbox"]:disabled + label {
 }
 
 /* end paginator */
-

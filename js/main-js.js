@@ -1,8 +1,6 @@
 var button = document.querySelector(".write-us");
 var popup = document.querySelector(".modal-window");
-
 var close = popup.querySelector(".close");
-
 var form = popup.querySelector("form");
 var fullname = popup.querySelector("[id=name-id]");
 var email = popup.querySelector("[id=email-id]");
@@ -13,7 +11,6 @@ button.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.add("modal-window-show");
 });
-
 
 close.addEventListener("click", function(event) {
 	event.preventDefault();
@@ -50,7 +47,6 @@ form.addEventListener("submit", function(event) {
 		}	
 	}
 })
-
 
 window.addEventListener("keydown", function(event) {
 	if (event.keyCode === 27) {
